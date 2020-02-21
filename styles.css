@@ -4,7 +4,7 @@
 
 nav ul {
   list-style-type: none;
-  background-color: #87cefa;
+  background-color: #aaaa00;
   border: 4px solid #111111;
   border-radius: 10px;
   font-weight: bold;
@@ -28,11 +28,11 @@ nav ul li a {
 }
 
 html {
-  background-color: #f05e23;
+  background-color: #000080;
 }
   
 body {
-  background-color: #f0a000;
+  background-color: #0000cd;
 }
 
 h1 {
