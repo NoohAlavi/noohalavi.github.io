@@ -3,6 +3,10 @@
   color: #ffffff;
 }
 
+header p {
+  font-weight: bold;
+}
+
 nav ul {
   list-style-type: none;
   background-color: #ffff00;
