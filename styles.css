@@ -32,6 +32,10 @@ nav ul li a {
   color: #111111;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 footer ul {
   list-style-type: none;
   background-color: #f05e23;
