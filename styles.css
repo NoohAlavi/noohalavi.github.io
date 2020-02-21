@@ -2,6 +2,31 @@
   font-family: sans-serif;  
 }
 
+nav ul {
+  list-style-type: none;
+  background-color: #0000aa;
+  border: 1px solid #111111;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+nav ul li {
+  display: inline;
+  border-right: 2ox solid #111111;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+nav ul li: last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
 html {
   background-color: #f05e23;
 
