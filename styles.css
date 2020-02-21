@@ -23,21 +23,19 @@ nav ul li:: last-child {
   border-right: none;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
 footer ul {
   list-style-type: none;
   background-color: #f05e23;
-  border: 4px solid #111111;
-  border-radius: 10px;
   padding: 16px;
 }
 
 footer ul li {
   display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #111111;
 }
 
 html {
