@@ -35,8 +35,10 @@ footer ul {
 }
 
 footer ul li {
-  display: inline;
+  display: inline-block;
   color: #111111;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 html {
