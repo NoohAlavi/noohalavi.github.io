@@ -76,7 +76,7 @@ ul.gamesList li a {
   /* border-radius: 10px; */
   font-weight: bold;
   text-decoration: none;
-  /* color: #111111; */
+  color: #ff0000; 
 }
 
 ul.gamesList li a:hover {
