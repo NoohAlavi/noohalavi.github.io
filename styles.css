@@ -71,12 +71,12 @@ ul.gamesList {
 
 ul.gamesList li a {
   list-style-type: none;
-  background-color: #ff0000;
-  border: 1px solid #111111;
-  border-radius: 10px;
+  /* background-color: #ff0000; */
+  /* border: 1px solid #111111; */
+  /* border-radius: 10px; */
   font-weight: bold;
   text-decoration: none;
-  color: #111111;
+  /* color: #111111; */
 }
 
 ul.gamesList li a:hover {
