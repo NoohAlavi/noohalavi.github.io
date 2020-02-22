@@ -59,3 +59,21 @@ body {
 footer {
   background-color: #0000ff;
 }
+
+ul.gamesList {
+  list-style-type: none;
+  background-color: #ff0000;
+  border: 4px solid #111111;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+ul.gamesList li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+ul.gamesList li a:hover {
+  text-decoration: underline;
+}
