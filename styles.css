@@ -83,7 +83,7 @@ ul.gamesList li a:hover {
   text-decoration: underline;
 }
 
-ul.contact
+ul.contact li a 
 {
   list-style-type: none;
 }
