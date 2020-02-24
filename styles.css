@@ -86,9 +86,10 @@ ul.gamesList li a:hover {
 footer ul.contact li a 
 {
   list-style-type: none;
+  text-decoration: none;
 }
 
 footer ul.contact li a:hover
 {
-  list-style-type: underline;
+  text-decoration: underline;
 }
