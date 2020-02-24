@@ -83,12 +83,12 @@ ul.gamesList li a:hover {
   text-decoration: underline;
 }
 
-ul.contact li a 
+footer ul.contact li a 
 {
   list-style-type: none;
 }
 
-ul.contact li a:hover
+footer ul.contact li a:hover
 {
   list-style-type: underline;
 }
