@@ -93,3 +93,9 @@ footer ul.contact li a:hover
 {
   text-decoration: underline;
 }
+
+header a.home
+{
+  text-decoration: none;
+  font-weight: bold;
+}
