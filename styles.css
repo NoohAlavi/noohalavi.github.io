@@ -85,7 +85,7 @@ ul.gamesList li a:hover {
 
 ul.gamesList li p
 {
-  color: #000000; 
+  /*color: #000000;*/ 
 }
 
 footer ul.contact li a 
