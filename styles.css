@@ -83,6 +83,11 @@ ul.gamesList li a:hover {
   text-decoration: underline;
 }
 
+ul.gamesList li p
+{
+  color: #000000; 
+}
+
 footer ul.contact li a 
 {
   list-style-type: none;
