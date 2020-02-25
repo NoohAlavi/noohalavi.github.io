@@ -27,6 +27,7 @@ nav ul li {
   border-right: 2px solid #111111;
   padding-right: 8px;
   padding-left: 8px;
+  font-family: "Bowlby One SC";
 }
 
 nav ul li:last-child {
@@ -36,6 +37,7 @@ nav ul li:last-child {
 nav ul li a {
   text-decoration: none;
   color: #111111;
+  font-family: "Bowlby One SC";
 }
 
 nav li a:hover {
