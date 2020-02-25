@@ -131,4 +131,5 @@ header a.home
 img.thumbnail
 {
   position: absolute;
+  left: -200;
 }
