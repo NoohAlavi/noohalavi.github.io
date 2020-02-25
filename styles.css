@@ -48,13 +48,15 @@ footer ul li {
   padding-left: 8px;
 }
 
-html {
+html
+{
   background-image: url("bbg.png");
 }
   
-body {
+body
+{
   /*background-color: #0000cd;*/
-  background-color: #000000
+  background-color: #151b54
 }
 
 footer {
