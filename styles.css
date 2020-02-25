@@ -119,4 +119,6 @@ header a.home
 img.thumbnail
 {
   display: inline;
+  position: absolute;
+  align: center;
 }
