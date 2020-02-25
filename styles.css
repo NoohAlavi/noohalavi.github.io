@@ -29,10 +29,14 @@ nav ul li
 {
   display: inline;
   border-right: 2px solid #111111;
-  border-left: 2px solid #111111;
   padding-right: 8px;
   padding-left: 8px;
   font-family: "Bowlby One SC";
+}
+
+nav ul li:first-child
+{
+  border-left: 2px solid #111111; 
 }
 
 nav ul li:last-child
