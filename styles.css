@@ -3,6 +3,11 @@
   color: #ffffff;
 }
 
+h2
+{
+  font-family: "Baloo Bhai";
+}
+
 header p {
   font-weight: bold;
 }
