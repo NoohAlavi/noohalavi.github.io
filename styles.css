@@ -22,7 +22,7 @@ nav ul
   font-weight: bold;
   font-family: "Bowlby One SC";
   padding: 16px;
-  display: flex;
+  text-align: center;
 }
 
 nav ul li
