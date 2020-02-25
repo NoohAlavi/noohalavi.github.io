@@ -128,7 +128,7 @@ footer ul.contact li a:hover
   text-decoration: underline;
 }
 
-header a.home
+header a.home, header a.home sup
 {
   text-decoration: none;
   font-weight: bold;
