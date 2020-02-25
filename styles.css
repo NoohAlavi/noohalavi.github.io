@@ -8,11 +8,13 @@ h2
   font-family: "Bowlby One SC";
 }
 
-header p {
+header p
+{
   font-weight: bold;
 }
 
-nav ul {
+nav ul
+{
   list-style-type: none;
   background-color: #ffff00;
   border: 4px solid #111111;
@@ -22,7 +24,8 @@ nav ul {
   padding: 16px;
 }
 
-nav ul li {
+nav ul li
+{
   display: inline;
   border-right: 2px solid #111111;
   padding-right: 8px;
@@ -30,27 +33,32 @@ nav ul li {
   font-family: "Bowlby One SC";
 }
 
-nav ul li:last-child {
+nav ul li:last-child
+{
   border-right: none;
 }
 
-nav ul li a {
+nav ul li a
+{
   text-decoration: none;
   color: #111111;
   font-family: "Bowlby One SC";
 }
 
-nav li a:hover {
+nav li a:hover
+{
   text-decoration: underline;
 }
 
-footer ul {
+footer ul
+{
   list-style-type: none;
   background-color: #f05e23;
   padding: 16px;
 }
 
-footer ul li {
+footer ul li
+{
   display: inline;
   padding-right: 8px;
   padding-left: 8px;
@@ -67,11 +75,13 @@ body
   background-color: #151b54
 }
 
-footer {
+footer
+{
   background-color: #0000ff;
 }
 
-ul.gamesList {
+ul.gamesList
+{
   list-style-type: none;
   /*background-color: #ff0000;
   border: 4px solid #111111;
@@ -80,7 +90,8 @@ ul.gamesList {
   padding: 16px; */
 }
 
-ul.gamesList li a {
+ul.gamesList li a
+{
   list-style-type: none;
   /* background-color: #ff0000; */
   /* border: 1px solid #111111; */
@@ -90,7 +101,8 @@ ul.gamesList li a {
   color: #ffff00; 
 }
 
-ul.gamesList li a:hover {
+ul.gamesList li a:hover
+{
   text-decoration: underline;
 }
 
@@ -118,7 +130,5 @@ header a.home
 
 img.thumbnail
 {
-  display: inline;
   position: absolute;
-  align: center;
 }
