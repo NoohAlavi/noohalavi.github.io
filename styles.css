@@ -72,7 +72,8 @@ footer ul li
 
 html
 {
-  background-image: url("bbg.png");
+  background-color: #000000;
+  /*background-image: url("bbg.png");*/
 }
   
 body
