@@ -136,6 +136,11 @@ header a.home, header a.home sup
   font-family: "Bowlby One SC"
 }
 
+footer p
+{
+  text-align: center; 
+}
+
 img.thumbnail
 {
   /*position: absolute;
