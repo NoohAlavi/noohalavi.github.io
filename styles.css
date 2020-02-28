@@ -107,7 +107,8 @@ ul.gamesList li a
   /* border-radius: 10px; */
   font-weight: bold;
   text-decoration: none;
-  color: #ffff00; 
+  color: #ffff00;
+  font-size: 150%;
 }
 
 ul.gamesList li a:hover
