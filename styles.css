@@ -149,3 +149,9 @@ img.thumbnail
   /*position: absolute;
   left: -200;*/
 }
+
+ul.ytVids li
+{
+  list-style-type: none;
+  display: inline;
+}
