@@ -137,7 +137,8 @@ header a.home, header a.home sup
 {
   text-decoration: none;
   font-weight: bold;
-  font-family: "Bowlby One SC"
+  font-family: "Bowlby One SC";
+  text-align: center;
 }
 
 footer p
