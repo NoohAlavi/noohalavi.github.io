@@ -133,7 +133,7 @@ footer ul.contact li a
 footer ul.contact li a:hover
 {
   color: #0099FF;
-  font-size: 150%;
+  text-decoration: underline;
 }
 
 header, header a.home, header a.home sup
