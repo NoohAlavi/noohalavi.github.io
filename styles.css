@@ -74,7 +74,7 @@ footer ul li
 html
 {
   background-color: #000000;
-  background-image: url("bbgg.jpg");
+  background-image: url("bbg.png");
 }
   
 body
@@ -131,7 +131,7 @@ footer ul.contact li a
 
 footer ul.contact li a:hover
 {
-  text-decoration: underline;
+  color: #ff0000;
 }
 
 header, header a.home, header a.home sup
