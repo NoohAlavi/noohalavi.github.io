@@ -54,7 +54,7 @@ nav ul li a
 
 nav li a:hover
 {
-  text-decoration: underline;
+  color: #ff0000
 }
 
 footer ul
@@ -131,7 +131,7 @@ footer ul.contact li a
 
 footer ul.contact li a:hover
 {
-  color: #ff0000;
+  color: #87cefa;
 }
 
 header, header a.home, header a.home sup
