@@ -55,7 +55,7 @@ nav ul li a
 nav li a:hover
 {
   color: #87cefa;
-  font-size: 110%;
+  font-size: 150%;
 }
 
 footer ul
@@ -133,7 +133,7 @@ footer ul.contact li a
 footer ul.contact li a:hover
 {
   color: #87cefa;
-  font-size: 110%;
+  font-size: 150%;
 }
 
 header, header a.home, header a.home sup
