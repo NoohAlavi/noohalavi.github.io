@@ -5,7 +5,7 @@
 
 h1, h2
 {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-family: "Bowlby One SC";
 }
 
@@ -70,6 +70,7 @@ footer ul li
   display: inline;
   padding-right: 8px;
   padding-left: 8px;
+  color: #87cefa
 }
 
 html
