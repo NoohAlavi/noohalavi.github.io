@@ -57,6 +57,10 @@ p {
   font-size: 115%;
 }
 
+.socials li a {
+  font-weight: bold;
+}
+
 header h1 {
   font-family: "Sriracha";
 }
