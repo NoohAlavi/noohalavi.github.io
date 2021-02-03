@@ -44,3 +44,7 @@ article {
 p {
   font-size: 115%;
 }
+
+.current {
+  color: #b4b4b4;
+}
