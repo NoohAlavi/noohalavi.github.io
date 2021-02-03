@@ -48,3 +48,7 @@ p {
 .current {
   color: #b4b4b4;
 }
+
+.socials {
+  list-style-type: none;
+}

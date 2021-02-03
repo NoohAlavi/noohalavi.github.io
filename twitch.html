@@ -6,6 +6,9 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
       </style>
+      <script>
+        console.log("Hey there :D. I see that you're a dev! My website is open sourced, you can find the code at http://noohalavi.github.io/source")
+      </script>
     <title> 
       Nooh Alavi's Website
     </title>
@@ -13,13 +16,12 @@
   <body>
     <header>
       <a href="index.html">Nooh Alavi</a>
-    <nav>
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about-me.html">About Me</a></li>
           <li>My Games</li>
-          <li class="current">My Twitch</li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="socials.html">My Socials</a></li>
         </ul>
       </nav>
     </header>
@@ -34,8 +36,8 @@
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
 <script type="text/javascript">
   new Twitch.Embed("twitch-embed", {
-    width: 854,
-    height: 480,
+    width: window.innerWidth - 100,
+    height: window.innerHeight - 100,
     channel: "Opsci",
     parent: ["localhost", "noohalavi.github.io", "github.io", "pages.github.com"]
   });
