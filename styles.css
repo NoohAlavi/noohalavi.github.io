@@ -1,23 +1,21 @@
 * {
-  color: #E6D6A7;
+  color: #f8f7f6;
   font-family: "Roboto";
 }
 
 body {
-  background-color: #273955;
+  background-color: #2C353E;
 }
 
-/* test aa*/
-
 nav ul {
-  background-color: #CD4341;
+  background-color: #90CED4;
   text-align: center;
   padding: 16px;
 }
 
 nav ul li:first-child
 {
-  border-left: 2px solid #9CB9C9; 
+  border-left: 2px solid #edaa46; 
 }
 
 nav ul li {
@@ -26,13 +24,13 @@ nav ul li {
   padding-right: 16px;
   padding-left: 16px;
   font-size: 150%;
-  border-right: 2px solid #9CB9C9;
+  border-right: 2px solid #edaa46;
 }
 
 
 a {
   text-decoration: none;
-  color: #E6D6A7;
+  color: #f8f7f6;
 }
 
 a:hover {
@@ -40,7 +38,7 @@ a:hover {
 }
 
 article {
-  background-color: #CD4341;
+  background-color: #90CED4;
 }
 
 p {
@@ -48,7 +46,9 @@ p {
 }
 
 .current {
-  color: #687CBC;
+  /* color: #c35732; */
+  /* edaa46 */
+  color: #edaa46
 }
 
 .socials {
