@@ -1,21 +1,21 @@
 * {
-  color: #E0E6EA;
+  color: #E6D6A7;
   font-family: "Roboto";
 }
 
 body {
-  background-color: #2A2F3D;
+  background-color: #273955;
 }
 
 nav ul {
-  background-color: #6E8DA1;
+  background-color: #CD4341;
   text-align: center;
   padding: 16px;
 }
 
 nav ul li:first-child
 {
-  border-left: 2px solid #446893; 
+  border-left: 2px solid #9CB9C9; 
 }
 
 nav ul li {
@@ -24,13 +24,13 @@ nav ul li {
   padding-right: 16px;
   padding-left: 16px;
   font-size: 150%;
-  border-right: 2px solid #446893;
+  border-right: 2px solid #9CB9C9;
 }
 
 
 a {
   text-decoration: none;
-  color: #e5e1db;
+  color: #E6D6A7;
 }
 
 a:hover {
@@ -38,7 +38,7 @@ a:hover {
 }
 
 article {
-  background-color: #6E8DA1;
+  background-color: #CD4341;
 }
 
 p {
@@ -46,7 +46,7 @@ p {
 }
 
 .current {
-  color: #446893;
+  color: #687CBC;
 }
 
 .socials {
