@@ -52,3 +52,7 @@ p {
 .socials {
   list-style-type: none;
 }
+
+.socials li {
+  font-size: 115%;
+}
