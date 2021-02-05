@@ -71,7 +71,7 @@
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">My Blog</a></li>
 		<li><a rel=prefetch aria-current="{segment === 'games' ? 'page' : undefined}" href="games">My Games</a></li>
-		<li><a rel=prefetch aria-current="{segment === 'yt' ? 'page' : undefined}" href="#">My YouTube</a></li>
-		<li><a rel=prefetch aria-current="{segment === 'twitch' ? 'page' : undefined}" href="#">My Twitch</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'yt' ? 'page' : undefined}" href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg">My YouTube</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'twitch' ? 'page' : undefined}" href="https://www.twitch.tv/opsci">My Twitch</a></li>
 	</ul>
 </nav>
