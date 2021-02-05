@@ -52,7 +52,7 @@
 
 	a:hover {
 		font-weight: bold;
-		text-decoration: underline;
+		/* text-decoration: underline; */
 	}
 
 	.icon {
