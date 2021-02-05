@@ -35,4 +35,4 @@
 
 <h1>My games!</h1>
 
-<p><strong><i>Sorry! This part of the website is still a work in progess! You can find my games on <a href="https://www.noohalavi.itch.io">itch.io</a> in the meantime. Sorry for the inconvenience!</i></strong></p>
+<p><strong><i>Sorry! This part of the website is still a work in progess! You can find my games on <a href="https://noohalavi.itch.io">itch.io</a> in the meantime. Sorry for the inconvenience!</i></strong></p>
