@@ -29,6 +29,10 @@
 	<title>Nooh Alavi - Games</title>
 </svelte:head>
 
+<script>
+	console.log("I see that you're a dev! Don't worry - this website is open source at https://noohalavi.github.io/source");
+</script>
+
 <h1>My games!</h1>
 
 <p><strong><i>Sorry! This part of the website is still a work in progess! You can find my games on <a href="https://www.noohalavi.itch.io">itch.io</a> in the meantime. Sorry for the inconvenience!</i></strong></p>

@@ -11,7 +11,7 @@ const posts = [
 	{
 		title: "Hello, World!",
 		slug: "hello-world",
-		html: ` Hello world! Welcome to NA Games!		
+		html: ` Hello world! Welcome to my website! I made this as a place to post my games, videos, devlogs, etc. And it was fun learning web dev along the way!		
 		`
 	}
 ];

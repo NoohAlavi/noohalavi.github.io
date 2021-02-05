@@ -65,7 +65,7 @@
 	<ul>
 		<li><a href=" "><img class="icon" alt="Icon" src="{favicon}"></a></li>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About Me</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
