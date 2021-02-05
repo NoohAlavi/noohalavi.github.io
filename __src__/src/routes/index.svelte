@@ -19,7 +19,7 @@
 </style>
 
 <svelte:head>
-	<title>NA Games - Home</title>
+	<title>Nooh Alavi - Home</title>
 </svelte:head>
 
-<h1>NA Games</h1>
+<h1>Nooh Alavi</h1>

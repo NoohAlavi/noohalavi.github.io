@@ -26,7 +26,7 @@
 </style>
 
 <svelte:head>
-	<title>NA Games - Games</title>
+	<title>Nooh Alavi - Games</title>
 </svelte:head>
 
 <h1>My games!</h1>

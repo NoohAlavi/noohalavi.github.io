@@ -70,6 +70,8 @@
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">My Blog</a></li>
-		<li><a rel=prefetch aria-current="{segment === 'games' ? 'page' : undefined}" href="games">Games</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'games' ? 'page' : undefined}" href="games">My Games</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'yt' ? 'page' : undefined}" href="#">My YouTube</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'twitch' ? 'page' : undefined}" href="#">My Twitch</a></li>
 	</ul>
 </nav>

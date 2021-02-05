@@ -14,14 +14,31 @@
 	ul {
 		margin: 0 0 1em 0;
 		line-height: 1.5;
+		position: relative;
+  		list-style: none;
+	}
+
+	li::before {
+  		content: '>';
+  		position: absolute;
+  		left: 0;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
 
 <svelte:head>
-	<title>NA Games - Blog</title>
+	<title>Nooh Alavi - Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<h1>Recent Posts</h1>
 
 <ul>
 	{#each posts as post}
