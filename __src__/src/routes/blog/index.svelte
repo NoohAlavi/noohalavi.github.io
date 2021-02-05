@@ -7,6 +7,7 @@
 </script>
 
 <script>
+	console.clear();
 	console.log("I see that you're a dev! Don't worry - this website is open source at https://noohalavi.github.io/source");
 	export let posts;
 </script>
