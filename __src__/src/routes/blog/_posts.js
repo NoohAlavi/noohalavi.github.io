@@ -10,8 +10,9 @@
 const posts = [
 	{
 		title: "Hello, World!",
+		date: "05/02/2021",
 		slug: "hello-world",
-		html: ` Hello world! Welcome to my website! I made this as a place to post my games, videos, devlogs, etc. And it was fun learning web dev along the way!		
+		html: `&emsp; &emsp; Hello world! Welcome to my website! I made this as a place to post my games, videos, devlogs, etc. And it was fun learning web dev along the way! Stay tuned!	
 		`
 	}
 ];
