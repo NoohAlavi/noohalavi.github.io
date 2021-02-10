@@ -10,14 +10,28 @@
 const posts = [
 	{
 		title: "This is annoying >_<",
-		date: "05/02/2021",
+		_date: "05/02/2021",
 		slug: "this-is-annoying",
-		html: `&emsp; &emsp; I hate bugs.... don't we all? I'm trying to add the date next to the name of the blog posts, and well, if you're here before it gets fixed, you can see that it just says <i>undefined</i>. Then again, I'm new to this Sapper thing... so chances are I'm just doing something wrong. xD
+		html: `&emsp; &emsp; I hate bugs.... don't we all? I'm trying to add the date next to the name of the blog posts, and well, if you're here before it gets fixed, you can see that it just says <i>undefined</i>. Then again, I'm new to this Sapper thing (<a href="https://sapper.svelte.dev">Sapper</a> is an application framework powered by svelte, which I am using for this project)... so chances are I'm just doing something wrong... xD
+		<br>&emsp; &emsp; At the moment, the posts are stored in a .js file, which is being read by <i>blog/index.svelte</i>. The js file looks something like the code shown below (you can find the full source code at <a href="noohalavi.github.io/source">noohalavi.github.io/source</a>)
+		<pre><code>
+const posts = [
+	{
+		title: "example_title",
+		date: "example_date",
+		slug: "example_slug"
+		html: 'content goes here'
+	}
+]
+};
+		</code></pre>
+		&emsp;&emsp; But I'm not too worried. I'll solve it eventually...
+		<br><br><br>&emsp;&emsp;Right?
 		`
 	},
 	{
 		title: "Hello, World!",
-		date: "05/02/2021",
+		_date: "05/02/2021",
 		slug: "hello-world",
 		html: `&emsp; &emsp; Hello world! Welcome to my website! I made this as a place to post my games, videos, devlogs, etc. And it was fun learning web dev along the way! Keep in mind that the site is still a big work in progress! Stay tuned!	
 		`
