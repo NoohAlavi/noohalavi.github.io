@@ -9,8 +9,14 @@
 
 const posts = [
 	{
+		title: "New Game! :D",
+		_date: "15/02/2021",
+		slug: "new-game",
+		html: `&emsp; &emsp; Hey everyone! I've decided to start a new project and thought it would be a good idea to post some devlogs here! The game is gonna be a platformer`
+	},
+	{
 		title: "This is annoying >_<",
-		_date: "05/02/2021",
+		date: "05/02/2021",
 		slug: "this-is-annoying",
 		html: `&emsp; &emsp; I hate bugs.... don't we all? I'm trying to add the date next to the name of the blog posts, and well, if you're here before it gets fixed, you can see that it just says <i>undefined</i>. Then again, I'm new to this Sapper thing (<a href="https://sapper.svelte.dev">Sapper</a> is an application framework powered by svelte, which I am using for this project)... so chances are I'm just doing something wrong... xD
 		<br>&emsp; &emsp; At the moment, the posts are stored in a .js file, which is being read by <i>blog/index.svelte</i>. The js file looks something like the code shown below (you can find the full source code at <a href="noohalavi.github.io/source">noohalavi.github.io/source</a>)

@@ -73,5 +73,7 @@
 		<li><a rel=prefetch aria-current="{segment === 'games' ? 'page' : undefined}" href="games">My Games</a></li>
 		<li><a rel=prefetch aria-current="{segment === 'yt' ? 'page' : undefined}" href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg">My YouTube</a></li>
 		<li><a rel=prefetch aria-current="{segment === 'twitch' ? 'page' : undefined}" href="https://www.twitch.tv/opsci">My Twitch</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'itch' ? 'page' : undefined}" href="https://noohalavi.itch.io">My Itch.io</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'discord' ? 'page' : undefined}" href="https://discord.gg/vxvksvd/">My Discord</a></li>
 	</ul>
 </nav>

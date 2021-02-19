@@ -27,4 +27,7 @@
 	<title>Nooh Alavi - Home</title>
 </svelte:head>
 
-<h1>Nooh Alavi</h1>
+<body>
+	<h1>Nooh Alavi</h1>
+	<p>&emsp;&emsp; Hey! My name is Nooh Alavi, and I'm just a kid who likes coding and game development! I made this site as a place to post my projects, videos, tutorials, devlogs and thoughts!</p>
+</body>
