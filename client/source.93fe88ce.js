@@ -1,1 +1,0 @@
-import{S as o,i as t,s as i}from"./client.e12e4420.js";function s(o){return window.location.href="https://www.github.com/NoohAlavi/noohalavi.github.io",[]}export default class extends o{constructor(o){super(),t(this,o,s,null,i,{})}}
