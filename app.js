@@ -5,14 +5,16 @@ var quotes = [
     "Testing leads to failure, and failure leads to understanding.",
     "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.",
     "The best error message is the one that never shows up.",
-    "Programming isn't about what you know; it's about what you can figure out."
+    "Programming isn't about what you know; it's about what you can figure out.",
+    "The only way to learn a new programming language is by writing programs in it."
 ]
 
 var authors = [
     "Burt Rutan",
     "Andrew Hunt",
     "Thomas Fuhcs",
-    "Chris Pine"
+    "Chris Pine",
+    "Dennis Ritchie"
 ]
 
 function randomizeQuote() {
@@ -23,8 +25,6 @@ function randomizeQuote() {
     var rand = Math.floor(Math.random() * quotes.length);
     var quote = quotes[rand];
     var author = authors[rand];
-    console.log(quote);
-    console.log(author);
 
     randomQuote.innerHTML = `"${quote}"`;
     randomQuoteAuthor.innerHTML = `- ${author}`
