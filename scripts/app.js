@@ -13,7 +13,9 @@ var quotes = [
     "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
     "People don't care about what you say, they care about what you build.",
     "Everybody in this country should learn to program a computer because it teaches you how to think.",
-    "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."
+    "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
+    "The computer was born to solve problems that did not exist before.",
+    "A good programmer is someone who always looks both ways before crossing a one-way street."
 ]
 
 var authors = [
@@ -28,7 +30,9 @@ var authors = [
     "Edsger W. Dijkstra",
     "Mark Zuckerberg",
     "Steve Jobs",
-    "Rajanand"
+    "Rajanand",
+    "Bill Gates",
+    "Doug Linder"
 ]
 
 function randomizeQuote() {
