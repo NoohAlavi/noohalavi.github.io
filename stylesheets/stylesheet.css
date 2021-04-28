@@ -5,3 +5,18 @@
 .docFooter a:hover {
     text-decoration: underline;
 }
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    size: 40%
+}
+
+.blogPosts ul li a {
+    text-decoration: none;
+}
+
+.blogPosts ul li a:hover {
+    text-decoration: underline;
+}
