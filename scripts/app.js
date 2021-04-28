@@ -1,3 +1,4 @@
+"use strict";
 
 //Random Quote on open website
 
@@ -60,4 +61,5 @@ function w3_close() {
 
 window.onload = function() {
     randomizeQuote();
+    console.log("This website is open sourced! You can find the code at https://noohalavi.github.io/source");
 }
