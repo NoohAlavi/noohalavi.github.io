@@ -32,7 +32,7 @@ function randomizeQuote() {
     var quote = quotes[rand];
     var author = authors[rand];
 
-    randomQuote.innerHTML = `"${quote}"`;
+    randomQuote.innerHTML = `“${quote}”`;
     randomQuoteAuthor.innerHTML = `- ${author}`
 }
 
