@@ -1,0 +1,11 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.docFooter a {
+    text-decoration: none;
+}
+
+.docFooter a:hover {
+    text-decoration: underline;
+}

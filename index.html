@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nooh Alavi</title>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <script src="app.js"></script>
+
+    <title>Nooh Alavi</title>
 </head>
 <body>
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left" style="width:200px;" id="mySidebar">
         <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button w3-hover-green">Home</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-green">Home</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-green">About Me</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-green">My Blog</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-green">Projects and Downloads</a>
-      </div>
-      
-      <div class="w3-main" style="margin-left:200px">
-      <div class="w3-teal">
-        <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-          <h1>Nooh Alavi</h1>
-        </div>
-      </div>
-      
-      <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
+    </div>
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script> 
+    <div class="w3-main" style="margin-left:200px">
+        <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+        
+        <div class="w3-panel w3-pale-yellow w3-leftbar w3-border-amber">
+            <p>This site is a heavy work in progress.</p>
+        </div> 
+        
+        <div class="w3-container">
+            <h1>Nooh Alavi</h1>
+        </div>
+
+        <div class="w3-panel w3-leftbar w3-sand">
+            <p class="w3-xxlarge w3-serif">
+            <i id="randomQuote">"Testing leads to failure, and failure leads to understanding."</i></p>
+            <p id="randomQuoteAuthor">- Burt Rutan</p>
+        </div> 
+    </div>
+
+    <div class="w3-container w3-teal docFooter">
+        <p><a href="https://noohalavi.github.io/source">Website Source</a></p>
+    </div>
 </body>
 </html>
