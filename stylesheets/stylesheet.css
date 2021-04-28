@@ -1,8 +1,12 @@
-.docFooter a {
+.docFooter li {
+    list-style-type: none;
+}
+
+.docFooter ul li a {
     text-decoration: none;
 }
 
-.docFooter a:hover {
+.docFooter ul li a:hover {
     text-decoration: underline;
 }
 
