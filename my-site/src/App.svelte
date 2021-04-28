@@ -13,9 +13,34 @@
 </svelte:head>
 
 <main>
-	<h1>Nooh Alavi</h1>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Me</a></li>
+			<li><a href="#">My Blog</a></li>
+		</ul>
+	</nav>
+	<h1 class="title">Nooh Alavi</h1>
 </main>
 
 <style>
 
+	.title {
+		text-align: center;
+	}
+
+	nav {
+		position: absolute;
+		left: 0px;
+	}
+
+	nav ul li {
+		margin-bottom: 15px;
+		list-style-type: none;
+	}
+
+	nav ul li a {
+		color: #333333;
+		font-size: large;
+	}
 </style>
