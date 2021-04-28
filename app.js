@@ -8,8 +8,12 @@ var quotes = [
     "Programming isn't about what you know; it's about what you can figure out.",
     "The only way to learn a new programming language is by writing programs in it.",
     "Simplicity is the soul of efficiency.",
-    "Java is to JavaScript what car is to Carpet",
-    "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+    "Java is to JavaScript what car is to Carpet.",
+    "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
+    "People don't care about what you say, they care about what you build.",
+    "Everybody in this country should learn to program a computer because it teaches you how to think.",
+    "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."
 ]
 
 var authors = [
@@ -20,7 +24,11 @@ var authors = [
     "Dennis Ritchie",
     "Austin Freeman",
     "Chris Heilmann",
-    "Martin Fowler"
+    "Martin Fowler",
+    "Edsger W. Dijkstra",
+    "Mark Zuckerberg",
+    "Steve Jobs",
+    "Rajanand"
 ]
 
 function randomizeQuote() {
