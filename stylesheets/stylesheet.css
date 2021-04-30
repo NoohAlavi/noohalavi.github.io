@@ -27,29 +27,11 @@ body {
     min-width: 256px;
 }
 
-footer {
-    background-color: var(--accent-2);
-    padding: 4px;
-}
-
-footer #contact {
-    text-align: right;
-    padding-right: 24px;
-}
-
-footer #contact a {
-    color: #283747;
-    text-decoration: none;
-}
-
-h1.title {
-    color: var(--accent-1);
-    text-align: center;
-    font-size: 300%;
-}
-
-p.subtitle {
-    text-align: center;
+img.logo {
+    width: 48px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 nav {
@@ -68,6 +50,11 @@ nav ul li {
     border-right: 2px solid var(--dark-color);
 }
 
+nav ul li:first-child {
+    border-right: none;
+    padding-right: 1000px;
+}
+
 nav ul li:last-child {
     border-right: none;
 }
@@ -79,4 +66,29 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+h1.title {
+    color: var(--accent-1);
+    text-align: center;
+    font-size: 300%;
+}
+
+p.subtitle {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent-2);
+    padding: 4px;
+}
+
+footer #contact {
+    text-align: right;
+    padding-right: 24px;
+}
+
+footer #contact a {
+    color: #283747;
+    text-decoration: none;
 }
