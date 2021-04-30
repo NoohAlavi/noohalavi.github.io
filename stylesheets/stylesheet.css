@@ -1,0 +1,82 @@
+:root {
+    --background-1: #e0e7f5;
+    --background-2: #f3f3f3;
+    --accent-1: #3C1874;
+    --accent-2: #DE354C;
+    --dark-accent: #932432;
+    --dark-color: #283747;
+}
+
+html {
+    font-family: sans-serif;
+    color: #283747;
+    background-color: var(--background-1);
+}
+
+body {
+    background-color: var(--background-2);
+    border: 2px solid var(--dark-color);
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
+}
+
+footer {
+    background-color: var(--accent-2);
+    padding: 4px;
+}
+
+footer #contact {
+    text-align: right;
+    padding-right: 24px;
+}
+
+footer #contact a {
+    color: #283747;
+    text-decoration: none;
+}
+
+h1.title {
+    color: var(--accent-1);
+    text-align: center;
+    font-size: 300%;
+}
+
+p.subtitle {
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    padding: 16px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-right: 2px solid var(--dark-color);
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
