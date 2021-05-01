@@ -102,6 +102,10 @@ h2.section-header {
     margin: 48px auto 24px auto;
 }
 
+h2.header {
+    color: var(--accent-1);
+}
+
 footer {
     background-color: var(--accent-2);
     border: 2px solid var(--accent-2);
