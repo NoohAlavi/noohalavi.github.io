@@ -103,26 +103,33 @@ footer {
     padding: 4px;
 }
 
-footer ul {
+footer div {
     margin-right: 0px;
     margin-left: 50vw;
+    padding: 8px;
 }
 
-footer ul li {
-    list-style-type: none;
+footer img {
+    width: 32px;
+    display: inline;
+    margin: 0 8px;
 }
+
+/* footer div img:hover {
+    width: 35px;
+} */
 
 footer p {
     text-align: left;
-    padding-right: 24px;
+    color: #111111;
 }
 
-footer a {
-    color: #283747;
+footer p a {
+    color: #111111;
     text-decoration: none;
 }
 
-footer a:hover {
+footer p a:hover {
     text-decoration: underline;
     text-decoration-color: var(--accent-1);
 }
