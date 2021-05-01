@@ -29,6 +29,15 @@ body {
     min-width: 256px;
 }
 
+p.warning {
+    text-align: center;
+    padding: 8px;
+    background-color: #cc0000;
+    border: 4px solid #cc0000;
+    border-radius: 8px;
+    color: var(--background-2);
+}
+
 img.logo {
     width: 56px;
     margin-top: auto;
