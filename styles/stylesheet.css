@@ -131,3 +131,8 @@ article.about-me a:hover {
 article {
     padding: 24px;
 }
+
+iframe.discord-embed {
+    display: block;
+    margin: 0 auto;
+}
