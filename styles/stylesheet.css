@@ -103,7 +103,7 @@ footer {
     padding: 4px;
 }
 
-footer div {
+footer div.social-icons {
     margin-right: 0px;
     margin-left: 50vw;
     padding: 8px;
@@ -167,7 +167,7 @@ button.discord-button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    footer ul {
+    footer div.social-icons {
         margin: auto;
     }
 
