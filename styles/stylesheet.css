@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Quicksand&display=swap');
+
 :root {
     --background-1: #e0e7f5;
     --background-2: #f3f3f3;
@@ -8,7 +10,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--dark-color);
     background-color: var(--background-1);
 }
@@ -70,6 +72,7 @@ h1.title {
     color: var(--accent-1);
     text-align: center;
     font-size: 300%;
+    font-family: 'Days One', sans-serif;
 }
 
 p.subtitle {
