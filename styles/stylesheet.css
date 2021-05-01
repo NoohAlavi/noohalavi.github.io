@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Quicksand&display=swap');
 
 :root {
-    --background-1: #e0e7f5;
-    --background-2: #f3f3f3;
+    --light-1: #e0e7f5;
+    --light-2: #f3f3f3;
     --accent-1: #3C1874;
     --accent-2: #DE354C;
     --dark-accent: #932432;
@@ -12,11 +12,11 @@
 html {
     font-family: 'Quicksand', sans-serif;
     color: var(--dark-color);
-    background-color: var(--background-1);
+    background-color: var(--light-1);
 }
 
 body {
-    background-color: var(--background-2);
+    background-color: var(--light-2);
     border: 2px solid var(--dark-color);
     border-radius: 8px;
     padding-top: 8px;
@@ -32,10 +32,10 @@ body {
 p.warning {
     text-align: center;
     padding: 8px;
-    background-color: #cc0000;
-    border: 4px solid #cc0000;
+    background-color: var(--dark-accent);
+    border: 4px solid var(--dark-accent);
     border-radius: 8px;
-    color: var(--background-2);
+    color: var(--light-2);
 }
 
 img.logo {
@@ -148,7 +148,7 @@ iframe.discord-embed {
 
 button.discord-button {
     display: none;
-    color: var(--background-2);
+    color: var(--light-2);
     background-color: var(--dark-color);
     border: none;
     width: 100%;
