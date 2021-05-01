@@ -82,6 +82,12 @@ p.subtitle {
     text-align: center;
 }
 
+h2.section-header {
+    text-align: center;
+    color: var(--accent-1);
+    margin: 48px auto 24px auto;
+}
+
 footer {
     background-color: var(--accent-2);
     border: 2px solid var(--accent-2);
