@@ -159,7 +159,7 @@ button.discord-button {
     background-color: var(--accent-1);
     border: none;
     width: 100%;
-    padding: 8px;
+    padding: 12px 8px;
 }
 
 button.discord-button:hover {
