@@ -3,6 +3,6 @@ function openDiscord() {
 }
 
 function closeWarning() {
-    var warning = document.getElementsByClassName("warning")[0];
+    let warning = document.getElementsByClassName("warning")[0];
     warning.style.display = "none";
 }
