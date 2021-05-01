@@ -136,3 +136,9 @@ iframe.discord-embed {
     display: block;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 600px) {
+    footer ul {
+        margin: auto;
+    }
+  }
