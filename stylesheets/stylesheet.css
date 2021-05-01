@@ -9,7 +9,7 @@
 
 html {
     font-family: sans-serif;
-    color: #283747;
+    color: var(--dark-color);
     background-color: var(--background-1);
 }
 
@@ -80,6 +80,8 @@ h1.title {
 
 p.subtitle {
     text-align: center;
+    font-style: italic;
+    font-weight: bold;
 }
 
 h2.section-header {
@@ -95,12 +97,17 @@ footer {
     padding: 4px;
 }
 
+footer ul {
+    margin-right: 0px;
+    margin-left: 50vw;
+}
+
 footer ul li {
     list-style-type: none;
 }
 
 footer p {
-    text-align: right;
+    text-align: left;
     padding-right: 24px;
 }
 
@@ -111,4 +118,17 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+article.about-me a {
+    color: var(--accent-1);
+    text-decoration: none;
+}
+
+article.about-me a:hover {
+    text-decoration: underline;
+}
+
+article {
+    padding: 24px;
 }
