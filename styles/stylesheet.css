@@ -156,14 +156,14 @@ iframe.discord-embed {
 button.discord-button {
     display: none;
     color: var(--light-2);
-    background-color: var(--dark-color);
+    background-color: var(--accent-1);
     border: none;
     width: 100%;
     padding: 8px;
 }
 
 button.discord-button:hover {
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
 }
 
 @media only screen and (max-width: 600px) {
