@@ -38,6 +38,17 @@ p.warning {
     color: var(--light-2);
 }
 
+p.warning button#close-warning {
+    background-color: var(--dark-accent);
+    color: var(--light-2);
+    font-weight: bolder;
+    border: none;
+}
+
+p.warning button#close-warning:hover {
+    color: paleturquoise;
+}
+
 img.logo {
     width: 56px;
     margin-top: auto;
