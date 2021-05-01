@@ -171,6 +171,7 @@ button.discord-button {
     border: none;
     width: 100%;
     padding: 12px 8px;
+    font-family: 'Cuprum', sans-serif;
 }
 
 button.discord-button:hover {
@@ -178,10 +179,6 @@ button.discord-button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    footer div.social-icons {
-        margin: auto;
-    }
-
     iframe.discord-embed {
         display: none;
     }
@@ -190,3 +187,9 @@ button.discord-button:hover {
         display: initial;
     }
   }
+
+@media only screen and (max-width: 800px) {
+    footer div.social-icons {
+        margin: auto;
+    }
+}
