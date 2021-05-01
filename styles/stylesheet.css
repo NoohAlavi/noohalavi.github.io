@@ -28,23 +28,21 @@ body {
 }
 
 img.logo {
-    width: 48px;
+    width: 56px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-div.logo-holder {
-    display: flex;
-    align-items: center;
-}
-
 nav {
     text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     padding: 16px;
     list-style-type: none;
+    flex: 1;
 }
 
 nav ul li {
@@ -52,11 +50,6 @@ nav ul li {
     padding-right: 8px;
     padding-left: 8px;
     border-right: 2px solid var(--dark-color);
-}
-
-nav ul li:first-child {
-    border-right: none;
-    padding-right: 1000px;
 }
 
 nav ul li:last-child {
@@ -70,6 +63,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-1);
 }
 
 h1.title {
@@ -118,6 +112,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-1);
 }
 
 article.about-me a {
@@ -127,6 +122,7 @@ article.about-me a {
 
 article.about-me a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-1);
 }
 
 article {
