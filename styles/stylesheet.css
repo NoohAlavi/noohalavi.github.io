@@ -137,8 +137,29 @@ iframe.discord-embed {
     margin: 0 auto;
 }
 
+button.discord-button {
+    display: none;
+    color: var(--background-2);
+    background-color: var(--dark-color);
+    border: none;
+    width: 100%;
+    padding: 8px;
+}
+
+button.discord-button:hover {
+    background-color: var(--accent-1);
+}
+
 @media only screen and (max-width: 600px) {
     footer ul {
         margin: auto;
+    }
+
+    iframe.discord-embed {
+        display: none;
+    }
+
+    button.discord-button {
+        display: initial;
     }
   }
