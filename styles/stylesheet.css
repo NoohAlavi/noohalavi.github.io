@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
 
 :root {
     --light-1: #e0e7f5;
@@ -93,6 +93,7 @@ p.subtitle {
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Changa', sans-serif;
 }
 
 h2.section-header {
