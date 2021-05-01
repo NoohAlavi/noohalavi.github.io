@@ -113,10 +113,11 @@ footer div img {
     width: 32px;
     display: inline;
     margin: 0 8px;
+    transition: transform 200ms ease-in-out;
 }
 
 footer div img:hover {
-    width: 35px;
+    transform: scale(1.2);
 }
 
 footer p {
