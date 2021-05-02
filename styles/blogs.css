@@ -1,0 +1,31 @@
+@import url("./stylesheet.css");
+
+ul.posts {
+    list-style-type: none;
+}
+
+ul.posts a {
+    color: var(--dark-1);
+}
+
+h2.date {
+    color: var(--accent-1);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+i.date {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+section.post, ul.posts {
+    border: 2px solid var(--accent-1);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+section.post p {
+
+}

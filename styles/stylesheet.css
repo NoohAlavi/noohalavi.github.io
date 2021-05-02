@@ -156,12 +156,12 @@ footer p a:hover {
     text-decoration-color: var(--accent-1);
 }
 
-article.about-me a {
+article a {
     color: var(--accent-1);
     text-decoration: none;
 }
 
-article.about-me a:hover {
+article a:hover {
     text-decoration: underline;
     text-decoration-color: var(--accent-1);
 }
