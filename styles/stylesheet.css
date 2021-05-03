@@ -129,6 +129,11 @@ footer div.social-icons {
     padding: 8px;
     margin-left: 38vw;
 }
+@media only screen and (min-width: 240px) {
+    footer div.social-icons {
+        margin-left: -13vw;
+    }
+}
 @media only screen and (min-width: 360px) {
     footer div.social-icons {
         margin-left: 0vw;
@@ -139,9 +144,14 @@ footer div.social-icons {
         margin-left: 25vw;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
     footer div.social-icons {
         margin-left: 50vw;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    footer div.social-icons {
+        margin-left: 47vw;
     }
 }
 @media only screen and (min-width: 1400px) {
