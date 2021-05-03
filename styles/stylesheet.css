@@ -89,8 +89,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--accent-1);
+    color: var(--accent-1);
 }
 
 h1.title {
