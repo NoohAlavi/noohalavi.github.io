@@ -121,13 +121,43 @@ footer {
     background-color: var(--accent-2);
     border: 2px solid var(--accent-2);
     border-radius: 8px;
-    padding: 4px;
+    padding: 4vw;
 }
-
 footer div.social-icons {
-    margin-right: 0px;
-    margin-left: 50vw;
+    position: absolute;
+    margin-right: 0;
     padding: 8px;
+    margin-left: 38vw;
+}
+@media only screen and (min-width: 360px) {
+    footer div.social-icons {
+        margin-left: 0vw;
+    }
+}
+@media only screen and (min-width: 540px) {
+    footer div.social-icons {
+        margin-left: 25vw;
+    }
+}
+@media only screen and (min-width: 800px) {
+    footer div.social-icons {
+        margin-left: 50vw;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    footer div.social-icons {
+        margin-left: 45vw;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    footer div.social-icons {
+        margin-left: 40vw;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    footer div.social-icons {
+        margin-left: 32vw;
+    }
 }
 
 footer div img {
@@ -199,8 +229,8 @@ button.discord-button:hover {
     }
   }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     footer div.social-icons {
         margin: auto;
     }
-}
+} */
