@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
     --light-1: #e0e7f5;
@@ -10,7 +11,8 @@
 }
 
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     color: var(--dark-color);
     background-color: var(--light-1);
 }
@@ -90,6 +92,13 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--accent-1);
+}
+
+code {
+    border: 1px solid var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--light-1);
+    border-radius: 4px;
 }
 
 h1.title {
@@ -237,6 +246,7 @@ button.discord-button:hover {
         display: initial;
     }
   }
+
 
 /* @media only screen and (max-width: 800px) {
     footer div.social-icons {
