@@ -29,6 +29,6 @@ You can simply do all of your changes in the <code>dev</code> branch of the repo
 
 <h2>Hall Of Fame</h2>
 
-Thanks to everyone who has contributed or is actively contributing to the repo! It helps a ton!
+Thanks to everyone who has contributed or is actively contributing to the repo!
 
 [@darkxception](https://github.com/darkxception) - Helping with CSS
