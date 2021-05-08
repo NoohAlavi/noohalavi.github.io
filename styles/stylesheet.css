@@ -95,8 +95,8 @@ nav ul li a:hover {
 }
 
 code {
-    border: 1px solid var(--dark-color);
-    background-color: var(--dark-color);
+    border: 1px solid #300a24;
+    background-color: #300a24;
     color: var(--light-1);
     border-radius: 4px;
 }
