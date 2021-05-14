@@ -41,7 +41,9 @@ p.warning button#close-warning:hover {
 }
 
 nav {
-    padding: 16px 32px
+    padding: 16px 32px;
+    background-color: var(--accent-1);
+    color: var(--light-2)
 }
 
 nav ul {
@@ -53,7 +55,7 @@ nav ul li {
     display: inline;
     padding-right: 8px;
     padding-left: 8px;
-    border-right: 2px solid var(--dark-color)
+    border-right: 2px solid var(--light-2)
 }
 
 nav ul li:last-child {
@@ -61,7 +63,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: var(--dark-color);
+    color: var(--light-2);
     text-decoration: none;
 }
 
@@ -78,15 +80,13 @@ body {
     padding: 24px;
 }
 
-article {
-    padding: 24px;
-}
-
 section {
     margin-bottom: 24px;
-    min-height: 320px;
+    min-height: 160px;
     padding-left: 24px;
     padding-right: 24px;
+    border: 1px solid var(--dark-color);
+    background-color: var(--light-1);
 }
 
 section a {
@@ -114,7 +114,14 @@ p.subtitle {
 
 footer {
     background-color: var(--accent-2);
-    padding: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
 }
 
 footer ul li {
