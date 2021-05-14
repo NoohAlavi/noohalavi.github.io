@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
     --light-1: #e0e7f5;
@@ -10,7 +11,8 @@
 }
 
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     color: var(--dark-color);
     background-color: var(--light-1);
 }
@@ -89,8 +91,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--accent-1);
+    color: var(--accent-1);
+}
+
+code {
+    border: 1px solid #300a24;
+    background-color: #300a24;
+    color: var(--light-1);
+    border-radius: 4px;
 }
 
 h1.title {
@@ -129,6 +137,11 @@ footer div.social-icons {
     padding: 8px;
     margin-left: 38vw;
 }
+@media only screen and (min-width: 240px) {
+    footer div.social-icons {
+        margin-left: -13vw;
+    }
+}
 @media only screen and (min-width: 360px) {
     footer div.social-icons {
         margin-left: 0vw;
@@ -139,9 +152,14 @@ footer div.social-icons {
         margin-left: 25vw;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
     footer div.social-icons {
         margin-left: 50vw;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    footer div.social-icons {
+        margin-left: 47vw;
     }
 }
 @media only screen and (min-width: 1400px) {
@@ -228,6 +246,7 @@ button.discord-button:hover {
         display: initial;
     }
   }
+
 
 /* @media only screen and (max-width: 800px) {
     footer div.social-icons {
