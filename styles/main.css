@@ -112,6 +112,24 @@ p.subtitle {
     font-family: 'Changa', sans-serif;
 }
 
+footer {
+    background-color: var(--accent-2);
+    padding: 16px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
 @media all and (min-width: 900px) {
     article {
         float: left;
@@ -122,5 +140,9 @@ p.subtitle {
         float: left;
         padding-left: 24px;
         width: 34%;
+    }
+
+    footer {
+        clear:both;
     }
 }
