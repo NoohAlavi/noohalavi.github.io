@@ -6,54 +6,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Nooh Alavi - Blog</title>
-        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="styles/blogs.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="shortcut icon" href="images/favicon.ico">
         <script src="scripts/app.js"></script>
 
-        <meta property="og:site_name" content="Nooh Alavi">
-        <meta property="og:url" content="https://noohalavi.github.io/blog.html">
-        <meta property="og:title" content="Nooh Alavi - Blog">
-        <meta property="og:description" content="Nooh's Blog">
+        <meta property="og:site_name" content="Nooh Alavi's Blog">
+        <meta property="og:url" content="https://noohalavi.github.io">
+        <meta property="og:title" content="Nooh Alavi - Home">
+        <meta property="og:description" content="Just a teen who loves coding and game development!">
         <meta property="og:type" content="website">
         <meta name="og:image" itemprop="image" content="https://noohalavi.github.io/images/favicon.ico">
-
-        <p class="warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
-
-        <nav>
-            <a href="index.html"><img src="images/favicon.ico" class="logo"></a>
-            <ul>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="">My Blog</a></li>
-                <li><a href="">My Projects</a></li>
-            </ul>
-        </nav>
     </head>
     <body>
-    <article>
-        <section>
-              <h1 class="title">My Blog</h1>
-        </section>
-              <h2 class="header">Posts</h2>
-        <section>
-            <ul class="posts">
-                <li><a href="posts/hello-world.html">Hello, World!<i class="date">1/5/21</i> </a></li>
-                <li><a href="posts/i_switched_to_linux.html">Why I Switched To Linux<i class="date">8/5/21</i> </a></li>
-            </ul>
-        </section>
-      </article>
+        <header>
+            <p class="warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
+
+            <nav>
+                <h3 class="page-header"><a href="./index.html">nooh alavi - developer</a></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="title">Nooh Alavi</h1>
+        <p class="subtitle">Just a teen who loves coding and game development!</p>
+        <article>
+            <section>
+                <h2>Blog Posts</h2>
+                <ul>
+                    <li><a href="posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i></li>
+                    <li><a href="posts/hello-world.html">Hello, World!</a><i> - 1/5/21</i></li>
+                </ul>
+            </section>
+        </article>
+        <aside>
+            <section>
+                <h2>Latest Blogs</h2>
+                <ul>
+                    <li><a href="posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i></li>
+                    <li><a href="posts/hello-world.html">Hello, World!</a><i> - 1/5/21</i></li>
+                </ul>
+            </section>
+            <section>
+                <h2>New Project</h2>
+            </section>
+            <section>
+                <h2>Latest Videos</h2>
+                <ul>
+                </ul>
+            </section>
+        </aside>
         <footer>
-            <article>
-                <p>Email: <a href="mailto:noohalavidev@gmail.com" target="_blank">noohalavidev@gmail.com</a></p>
-                <p><a href="source.html" target="_blank">Website Source Code</a></p>
-                <div class="social-icons">
-                    <a href="https://discord.gg/vxvKSvd" target="_blank"><img src="images/discord.png" alt="Discord"></a>
-                    <a href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg" target="_blank"><img src="images/yt.png" alt="YouTube"></a>
-                    <a href="https://www.twitch.tv/opsci" target="_blank"><img src="images/twitch.png" alt="Twitch"></a>
-                    <a href="https://noohalavi.itch.io/" target="_blank"><img src="images/itch.png" alt="Itch"></a>
-                    <a href="https://github.com/noohalavi/" target="_blank"><img src="images/github.png" alt="GitHub"></a>
-                </div>
-            </article>
+            <ul>
+                <li>Contact: <a href="mailto:noohalavidev@gmail.com">noohalavidev@gmail.com</a></li>
+                <li>Website Source Code: <a href="source.html">GitHub</a></li>
+            </ul>
         </footer>
     </body>
 </html>

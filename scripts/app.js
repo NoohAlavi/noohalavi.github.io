@@ -1,8 +1,17 @@
+let warning;
+
 function openDiscord() {
     open("https://discord.gg/vxvKSvd")
 }
 
 function closeWarning() {
-    let warning = document.getElementsByClassName("warning")[0];
     warning.style.display = "none";
+    localStorage.setItem("closedWarning", true);
+}
+
+window.onload = () => {
+    warning = document.getElementsByClassName("warning")[0];
+    if (localStorage.getItem("closedWarning") == "true") {
+        closeWarning();
+    }
 }
