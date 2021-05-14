@@ -12,7 +12,12 @@
 
 html {
     background-color: var(--light-1);
-    color: var(--dark-color)
+    color: var(--dark-color);
+    box-sizing: border-box;
+}
+
+*, *.before, *:after {
+    box-sizing: inherit;
 }
 
 p.warning {
@@ -68,11 +73,20 @@ body {
     background-color: var(--light-2);
     max-width: 1024px;
     min-width: 256px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
 }
 
 article {
     padding: 24px;
+}
+
+section {
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 section a {
@@ -96,4 +110,17 @@ p.subtitle {
     font-style: italic;
     font-weight: bold;
     font-family: 'Changa', sans-serif;
+}
+
+@media all and (min-width: 900px) {
+    article {
+        float: left;
+        width: 66%;
+    }
+
+    aside {
+        float: left;
+        padding-left: 24px;
+        width: 34%;
+    }
 }
