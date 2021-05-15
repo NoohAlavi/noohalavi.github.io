@@ -29,6 +29,7 @@ p.warning {
     border: 4px solid #880000;
     border-radius: 2px;
     color: var(--light-2);
+    font-size: 18px;
 }
 
 p.warning button#close-warning {
@@ -36,10 +37,11 @@ p.warning button#close-warning {
     color: var(--light-2);
     font-weight: bolder;
     border: none;
+    float: right;
 }
 
 p.warning button#close-warning:hover {
-    color: paleturquoise;
+    color: orange;
 }
 
 nav h3 a {
@@ -172,16 +174,34 @@ footer {
 
 footer ul li {
     list-style: none;
-    color: var(--light-1);
+    color: #111;
 }
 
 footer ul li a {
     text-decoration: none;
-    color: var(--light-1);
+    color: #111;
 }
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+footer ul.social-icons {
+    text-align: right;
+}
+
+footer ul.social-icons li {
+    display: inline;
+    margin: 0px 8px;
+}
+
+footer ul.social-icons li a img {
+    width: 32px;
+    transition: transform 200ms ease-in-out;
+}
+
+footer ul.social-icons li a img:hover {
+    transform: scale(1.2);
 }
 
 @media all and (min-width: 900px) {

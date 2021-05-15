@@ -6,12 +6,12 @@ function openDiscord() {
 
 function closeWarning() {
     warning.style.display = "none";
-    localStorage.setItem("closedWarning", true);
+    sessionStorage.setItem("closedWarning", true);
 }
 
 window.onload = () => {
     warning = document.getElementsByClassName("warning")[0];
-    if (localStorage.getItem("closedWarning") == "true") {
+    if (sessionStorage.getItem("closedWarning") == "true") {
         closeWarning();
     }
 }
