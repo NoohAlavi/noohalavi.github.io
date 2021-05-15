@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
     --light-1: #e0e7f5;
@@ -14,7 +15,7 @@ html {
     background-color: var(--light-1);
     color: var(--dark-color);
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 *, *.before, *:after {
@@ -112,6 +113,14 @@ section a:hover {
     text-decoration: underline;
 }
 
+section.blog-posts ul li:before {
+    content: ">> "
+}
+
+section.blog-posts ul li {
+    list-style: none;
+}
+
 h1.title {
     color: var(--accent-1);
     text-align: center;
@@ -178,13 +187,13 @@ footer ul li a:hover {
 @media all and (min-width: 900px) {
     article {
         float: left;
-        width: 66%;
+        width: 70%;
     }
 
     aside {
         float: left;
         padding-left: 24px;
-        width: 34%;
+        width: 30%;
     }
 
     footer {

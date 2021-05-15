@@ -17,13 +17,12 @@ i.date {
 }
 
 section.post, ul.posts {
-    border: 2px solid var(--accent-1);
-    border-radius: 8px;
+    border: 1px solid var(--accent-1);
     padding: 16px;
 }
 
 .blog-img {
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     display: block;
