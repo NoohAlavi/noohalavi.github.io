@@ -1,4 +1,4 @@
-@import url("./stylesheet.css");
+@import url("./main.css");
 
 ul.posts {
     list-style-type: none;
@@ -17,15 +17,12 @@ i.date {
 }
 
 section.post, ul.posts {
-    border: 2px solid var(--accent-1);
-    border-radius: 8px;
+    border: 1px solid var(--accent-1);
     padding: 16px;
 }
 
 .blog-img {
-    width: 50%;
-    border: 2px solid var(--accent-2);
-    border-radius: 8px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     display: block;
