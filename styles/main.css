@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 :root {
     --light-1: #e0e7f5;
@@ -14,6 +14,7 @@ html {
     background-color: var(--light-1);
     color: var(--dark-color);
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 
 *, *.before, *:after {
@@ -125,6 +126,21 @@ p.subtitle {
     font-family: 'Changa', sans-serif;
 }
 
+code {
+    border: 1px solid #300a24;
+    background-color: #300a24;
+    color: var(--light-1);
+    border-radius: 6px;
+    display: block;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 8px;
+    font-family: "Ubuntu Mono", sans-serif;
+    font-size: 16px;
+}
+
 aside section ul li {
     list-style: none;    
 }
@@ -173,5 +189,11 @@ footer ul li a:hover {
 
     footer {
         clear:both;
+    }
+}
+
+@media all and (max-width: 899px) {
+    aside {
+        display: none;
     }
 }

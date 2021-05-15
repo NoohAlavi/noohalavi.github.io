@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Nooh Alavi - Hello World</title>
-        <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
         <link rel="shortcut icon" href="../images/favicon.ico">
         <script src="../scripts/app.js"></script>
@@ -18,18 +18,19 @@
         <meta property="og:type" content="website">
         <meta name="og:image" itemprop="image" content="https://noohalavi.github.io/images/favicon.ico">
 
-        <p class="warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
-
-        <nav>
-            <a href="../index.html"><img src="../images/favicon.ico" class="logo"></a>
-            <ul>
-                <li><a href="../about-me.html">About Me</a></li>
-                <li><a href="../blog.html">My Blog</a></li>
-                <li><a href="">My Projects</a></li>
-            </ul>
-        </nav>
     </head>
     <body>
+        <header>
+            <p class="warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
+        
+            <nav>
+                <h3 class="page-header"><a href="../index.html">nooh alavi - developer</a></h3>
+                <ul>
+                    <li><a href="../index.html" class="current">Home</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
     <article>
         <section>
               <h1 class="title">Hello, World!</h1>
@@ -66,19 +67,29 @@
                 If you guys have any other ideas, feel free to tell me on my <a href="https://discord.gg/vxvKSvd">Discord server</a>. That's it from me for today, I'll see y'all later.
             </p>
         </section>
-      </article>
+    </article>
+        <aside>
+            <section>
+                <h2>Latest Blogs</h2>
+                <ul>
+                    <li><a href="./i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i></li>
+                    <li><a href="./hello-world.html">Hello, World!</a><i> - 1/5/21</i></li>
+                </ul>
+            </section>
+            <section>
+                <h2>New Project</h2>
+            </section>
+            <section>
+                <h2>Latest Videos</h2>
+                <ul>
+                </ul>
+            </section>
+        </aside>
         <footer>
-            <article>
-                <p>Email: <a href="mailto:noohalavidev@gmail.com" target="_blank">noohalavidev@gmail.com</a></p>
-                <p><a href="../source.html" target="_blank">Website Source Code</a></p>
-                <div class="social-icons">
-                    <a href="https://discord.gg/vxvKSvd" target="_blank"><img src="../images/discord.png" alt="Discord"></a>
-                    <a href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg" target="_blank"><img src="../images/yt.png" alt="YouTube"></a>
-                    <a href="https://www.twitch.tv/opsci" target="_blank"><img src="../images/twitch.png" alt="Twitch"></a>
-                    <a href="https://noohalavi.itch.io/" target="_blank"><img src="../images/itch.png" alt="Itch"></a>
-                    <a href="https://github.com/noohalavi/" target="_blank"><img src="../images/github.png" alt="GitHub"></a>
-                </div>
-            </article>
+            <ul>
+                <li>Contact: <a href="mailto:noohalavidev@gmail.com">noohalavidev@gmail.com</a></li>
+                <li>Website Source Code: <a href="source.html">GitHub</a></li>
+            </ul>
         </footer>
     </body>
 </html>

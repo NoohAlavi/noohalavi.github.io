@@ -1,4 +1,4 @@
-@import url("./stylesheet.css");
+@import url("./main.css");
 
 ul.posts {
     list-style-type: none;
@@ -24,8 +24,6 @@ section.post, ul.posts {
 
 .blog-img {
     width: 50%;
-    border: 2px solid var(--accent-2);
-    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: block;
