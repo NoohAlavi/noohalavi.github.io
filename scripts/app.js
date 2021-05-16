@@ -46,11 +46,12 @@ window.onload = () => {
 
     let storedTheme = localStorage.getItem("theme");
     if (!storedTheme) {
+        // This will only be run if there is no storedtTheme variable in the localStorage; Will run when user opens the page for the first time
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            // If dark mode is enabled, run this code
+            // If dark mode is enabled, set theme to dark
             setTheme('dark')
-            console.log("Current Theme: Dark")
         } else {
+            // If dark mode is not enabled, set the theme to light
             setTheme('light')
         }
     } else {
