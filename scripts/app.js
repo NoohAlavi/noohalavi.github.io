@@ -3,7 +3,7 @@ let themeToggle;
 let currentTheme = "light"
 
 function openDiscord() {
-    open("https://discord.gg/vxvKSvd")
+    open("https://discord.gg/vxvKSvd");
 }
 
 function closeWarning() {
@@ -29,11 +29,13 @@ function toggleTheme() {
 function setThemeBtn(theme) {
     btnText = ''
     if (theme == "light") {
-        btnText = "Dark"
+        btnText = "☽"
+    } else if (theme == "dark") {
+        btnText = "☀"
     } else {
-        btnText = "Light"
+        console.error(`Unknown theme ${theme}`)
     }
-    themeToggle.innerText = `${btnText} Mode`;
+    themeToggle.innerText = `${btnText}`;
 }
 
 window.onload = () => {
@@ -46,7 +48,7 @@ window.onload = () => {
 
     let storedTheme = localStorage.getItem("theme");
     if (!storedTheme) {
-        // This will only be run if there is no storedtTheme variable in the localStorage; Will run when user opens the page for the first time
+        // This will only be run if there is no storedTheme variable in the localStorage; Will run when user opens the page for the first time
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             // If dark mode is enabled, set theme to dark
             setTheme('dark')
