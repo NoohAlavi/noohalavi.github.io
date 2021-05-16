@@ -11,18 +11,24 @@ function closeWarning() {
     sessionStorage.setItem("closedWarning", true);
 }
 
-function setTheme(theme=false) {
-    if (theme) {
-        currentTheme = theme;
-    } else {
-        // If no arg is specificed, toggle the theme
-        currentTheme = (currentTheme == "light") ? "dark" : "light";
-    }
-    localStorage.setItem("theme", currentTheme)
-    console.log(`Toggled theme, theme is now ${currentTheme}`);
-    
-    btnText = ''
+function setTheme(theme) {
+    currentTheme = theme
+    localStorage.setItem("theme", theme)
+    console.log(`Set theme, theme is now ${theme}`);
+    setThemeBtn(theme)
+}
+
+function toggleTheme() {
     if (currentTheme == "light") {
+        setTheme("dark")
+    } else {
+        setTheme("light")
+    }
+}
+
+function setThemeBtn(theme) {
+    btnText = ''
+    if (theme == "light") {
         btnText = "Dark"
     } else {
         btnText = "Light"
@@ -38,7 +44,8 @@ window.onload = () => {
         closeWarning();
     }
 
-    if (!localStorage.getItem("theme")) {
+    let storedTheme = localStorage.getItem("theme");
+    if (!storedTheme) {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             // If dark mode is enabled, run this code
             setTheme('dark')
@@ -46,5 +53,7 @@ window.onload = () => {
         } else {
             setTheme('light')
         }
+    } else {
+        setThemeBtn(storedTheme)
     }
 }
