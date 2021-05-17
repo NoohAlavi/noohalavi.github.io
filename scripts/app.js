@@ -14,8 +14,24 @@ function closeWarning() {
 function setTheme(theme) {
     currentTheme = theme
     localStorage.setItem("theme", theme)
-    console.log(`Set theme, theme is now ${theme}`);
     setThemeBtn(theme)
+    console.log(`Set theme, theme is now ${theme}`);
+
+    // Change website colours
+
+    if (theme == "light") {
+        document.documentElement.style.setProperty("--bg-1", "#e0e7f5")
+        document.documentElement.style.setProperty("--bg-2", "#f3f3f3")
+        document.documentElement.style.setProperty("--accent-1", "#3C1874")
+        document.documentElement.style.setProperty("--text-1", "#283747")
+    } else if (theme == "dark") {
+        document.documentElement.style.setProperty("--bg-1", "#2e3440")
+        document.documentElement.style.setProperty("--bg-2", "#3b4252")
+        document.documentElement.style.setProperty("--accent-1", "#4f4e94")
+        document.documentElement.style.setProperty("--text-1", "#e0e7f5")
+    } else {
+        console.error(`Unknown Theme '${theme}'`);
+    }
 }
 
 function toggleTheme() {
@@ -57,6 +73,6 @@ window.onload = () => {
             setTheme('light')
         }
     } else {
-        setThemeBtn(storedTheme)
+        setTheme(storedTheme)
     }
 }
