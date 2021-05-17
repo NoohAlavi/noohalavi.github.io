@@ -3,17 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
-    --light-1: #e0e7f5;
-    --light-2: #f3f3f3;
+    --bg-1: #e0e7f5;
+    --bg-2: #f3f3f3;
     --accent-1: #3C1874;
     --accent-2: #DE354C;
-    --dark-accent: #932432;
-    --dark-color: #283747;
+    --accent-3: #932432;
+    --text-1: #283747;
+    --text-2: #f3f3f3;
 }
 
+/* the following is the dark mode colour palette */
+/* :root {
+    --bg-1: #2e3440;
+    --bg-2: #3b4252;
+    --accent-1: #4f4e94;
+    --accent-2: #DE354C;
+    --accent-3: #932432;
+    --text-1: #e0e7f5;
+    --text-2: #f3f3f3;
+} */
+
 html {
-    background-color: var(--light-1);
-    color: var(--dark-color);
+    background-color: var(--bg-1);
+    color: var(--text-1);
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
 }
@@ -28,13 +40,13 @@ p.warning {
     background-color: #880000;
     border: 4px solid #880000;
     border-radius: 2px;
-    color: var(--light-2);
+    color: var(--text-2);
     font-size: 18px;
 }
 
 p.warning button#close-warning {
     background-color: #880000;
-    color: var(--light-2);
+    color: var(--text-2);
     font-weight: bolder;
     border: none;
     float: right;
@@ -44,20 +56,33 @@ p.warning button#close-warning:hover {
     color: orange;
 }
 
+button#toggleThemeBtn {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    color: #dddd00;
+    background: transparent;
+    border: none;
+    font-size: 200%;
+}
+
+button#toggleThemeBtn:hover {
+    color: #ffff00;
+}
+
 nav h3 a {
-    color: var(--light-2);
+    color: var(--text-2);
     text-decoration: none;
 }
 
 nav h3 a:hover {
-    color: var(--light-1);
     text-decoration: underline;
 }
 
 nav {
     padding: 16px 32px;
     background-color: var(--accent-1);
-    color: var(--light-2);
+    color: var(--bg-2);
 }
 
 nav ul {
@@ -69,7 +94,7 @@ nav ul li {
     display: inline;
     padding-right: 8px;
     padding-left: 8px;
-    border-right: 2px solid var(--light-2);
+    border-right: 2px solid var(--text-2);
 }
 
 nav ul li:last-child {
@@ -77,18 +102,17 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: var(--light-2);
     text-decoration: none;
+    color: var(--text-2)
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: var(--light-1);
 }
 
 body {
-    background-color: var(--light-2);
-    border: 1px solid var(--light-2);
+    background-color: var(--bg-2);
+    border: 1px solid var(--bg-2);
     border-radius: 4px;
     max-width: 1024px;
     min-width: 256px;
@@ -102,8 +126,8 @@ section {
     min-height: 160px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--dark-color);
-    background-color: var(--light-1);
+    border: 1px solid var(--text-1);
+    background-color: var(--bg-1);
 } 
 
 section a {
@@ -128,6 +152,7 @@ h1.title {
     text-align: center;
     font-size: 300%;
     font-family: "Days One", sans-serif;
+    -webkit-text-stroke: 1px var(--stroke-col);
 }
 
 p.subtitle {
@@ -140,7 +165,7 @@ p.subtitle {
 code {
     border: 1px solid #300a24;
     background-color: #300a24;
-    color: var(--light-1);
+    color: var(--text-2);
     border-radius: 6px;
     display: block;
     margin-left: 16px;
@@ -154,6 +179,7 @@ code {
 
 h2 {
     color: var(--accent-1);
+    -webkit-text-stroke: 1px var(--stroke-col);
 }
 
 aside section ul li {
