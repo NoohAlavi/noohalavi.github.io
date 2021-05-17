@@ -15,7 +15,7 @@ function setTheme(theme) {
     currentTheme = theme
     localStorage.setItem("theme", theme)
     setThemeBtn(theme)
-    console.log(`Set theme, theme is now ${theme}`);
+    // console.log(`Set theme, theme is now ${theme}`);
 
     // Change website colours
 
