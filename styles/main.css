@@ -163,18 +163,23 @@ p.subtitle {
 }
 
 code {
-    border: 1px solid #300a24;
     background-color: #300a24;
+    border: 1px solid #300a24;
+    border-radius: 4px;
     color: var(--text-2);
+    font-family: "Ubuntu Mono", sans-serif;
+    font-size: 16px;
+}
+
+code.code-block {
+    border: 1px solid #300a24;
     border-radius: 6px;
+    padding: 8px;
     display: block;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 32px;
     margin-bottom: 32px;
-    padding: 8px;
-    font-family: "Ubuntu Mono", sans-serif;
-    font-size: 16px;
 }
 
 h2 {
