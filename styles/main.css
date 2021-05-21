@@ -251,8 +251,16 @@ footer ul.social-icons li a img:hover {
     }
 }
 
-@media all and (max-width: 899px) {
+@media all and (max-width: 599px) {
     aside {
         display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer ul.social-icons {
+        text-align: center;
     }
 }
