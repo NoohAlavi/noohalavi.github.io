@@ -22,7 +22,7 @@ Open up the terminal and type <code>$ git clone https://github.com/YOUR-USERNAME
 ![carbon(1)](https://user-images.githubusercontent.com/59208101/117544027-5c904200-afed-11eb-910b-c08e6531b3c8.png)
 
 
-<h3>Step 4: Write the Code!</h3>
+<h3>Step 3: Write the Code!</h3>
 
 You can simply do all of your changes in the <code>dev</code> branch of the repository. Once this is done, you can push all the changes and make a pull request to the main repository.
 
