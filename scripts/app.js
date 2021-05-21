@@ -20,11 +20,13 @@ function setTheme(theme) {
         document.documentElement.style.setProperty("--bg-2", "#f3f3f3")
         document.documentElement.style.setProperty("--accent-1", "#3C1874")
         document.documentElement.style.setProperty("--text-1", "#283747")
+        document.documentElement.style.setProperty("--shadow-col", "#00000044");
     } else if (theme == "dark") {
         document.documentElement.style.setProperty("--bg-1", "#2e3440")
         document.documentElement.style.setProperty("--bg-2", "#3b4252")
         document.documentElement.style.setProperty("--accent-1", "#4f4e94")
         document.documentElement.style.setProperty("--text-1", "#e0e7f5")
+        document.documentElement.style.setProperty("--shadow-col", "#aaaaaa44");
     } else {
         console.error(`Unknown Theme '${theme}'`);
     }
