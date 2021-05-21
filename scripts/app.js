@@ -2,10 +2,6 @@ let warning;
 let themeToggle;
 let currentTheme = "light"
 
-function openDiscord() {
-    open("https://discord.gg/vxvKSvd");
-}
-
 function closeWarning() {
     warning.style.display = "none";
     sessionStorage.setItem("closedWarning", true);

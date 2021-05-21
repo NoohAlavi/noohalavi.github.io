@@ -24,14 +24,14 @@
 } */
 
 html {
-    background-color: var(--bg-2);
+    background-color: var(--bg-1);
+    color: var(--text-1);
     box-sizing: border-box;
 }
 
 *, *.before, *:after {
     box-sizing: inherit;
     font-family: "Josefin Sans", sans-serif;
-    color: var(--text-1);
 }
 
 p.warning {
@@ -126,7 +126,7 @@ section {
     min-height: 160px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--accent-1);
+    border: 1px solid var(--text-1);
     background-color: var(--bg-1);
 } 
 
@@ -199,6 +199,7 @@ footer {
     background-color: var(--accent-2);
     padding: 8px 4px;
     margin: 0 auto;
+    max-width: 1024px;
     min-width: 256px;
 }
 
