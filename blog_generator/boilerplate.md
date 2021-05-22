@@ -34,11 +34,11 @@
                 </ul>
             </nav>
         </header>
-        <h1 class="title">Hello, World!</h1>
-        <h2 class="date">1st of May, 2021</h2>
+        <h1 class="title">{TITLE}</h1>
+        <h2 class="date">{DATE}</h2>
     <article>
        <section class="post">       
-       ---POST HERE---
+       {POST HERE}
        </section>
     </article>
         <aside>

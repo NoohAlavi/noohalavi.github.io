@@ -1,10 +1,17 @@
 import os
+from datetime import datetime as dt
 
+# Defining paths
 md_path = "blog_generator/posts/"
 html_path = "posts/"
 boilerplate_path = "blog_generator/boilerplate.md"
 
 def read_md():
+    """Reads all the markdown files in the blog_generator/posts/ folder
+
+    Returns:
+        dict: Dictionary of markdown files with format {title: content}
+    """
     md_data = {}
     if os.path.exists(md_path):
         files = os.listdir(md_path)
@@ -15,10 +22,18 @@ def read_md():
             md_data[md] = file_content
         return md_data
 
-def generate_html(md, file_name):
+def generate_html(md, file_name, title):
+    """Formats given markdown and saves it in an html file using the boilerplate file as a template
+
+    Args:
+        md (str): Markdown
+        file_name (str): Name of file, extension will be converted to .html
+    """
     if os.path.exists(boilerplate_path):
         with open(boilerplate_path, "r") as f:
-            
+            boilerplate = f.read()
+
+            # Format the linebreaks to <br> tags so they can be recognized by the HTML
             md_formatted = []
             for char in md:
                 if char == "\n":
@@ -27,10 +42,27 @@ def generate_html(md, file_name):
                 md_formatted.append(char)
             md_formatted = ''.join(md_formatted)
             
-            content = f.read().split("---POST HERE---")
+            # Inserts the content into the page
+            content = boilerplate.split("{POST HERE}")
             content.insert(1, md_formatted)
             html = ''.join(content)
 
+            # Inserts the title into the page
+            content = html.split("{TITLE}")
+            content.insert(1, title)
+            html = ''.join(content)
+
+            # Inserts the date into the page
+            day = dt.now().day
+            mon = dt.now().month
+            year = dt.now().year
+            date_formatted = f"{day}/{mon}/{year}"
+            
+            content = html.split("{DATE}")
+            content.insert(1, date_formatted)
+            html = ''.join(content)
+
+            # Creates the file
             if os.path.exists(html_path):
                 new_file_name = file_name
                 new_file = os.path.join(html_path, new_file_name)
@@ -44,4 +76,4 @@ for md in md_files:
     name = name[0] + ".html"
     name = ''.join(name)
     content = md_files[md]
-    generate_html(content, name)
+    generate_html(content, name, "MY TITLE")
