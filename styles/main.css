@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Days+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
 
 :root {
     --bg-1: #e0e7f5;
@@ -33,7 +34,7 @@ html {
 
 *, *.before, *:after {
     box-sizing: inherit;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "KoHo", sans-serif;
     color: var(--text-1);
 }
 
@@ -129,13 +130,16 @@ section {
     min-height: 160px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--accent-1);
-    background-color: var(--bg-1);
-    box-shadow: 0 4px 8px 0 var(--shadow-col);
-    transition: 0.3s;
+    /* border: 1px solid var(--accent-1); */
+    /* background-color: var(--bg-1); */
 } 
 
-section:hover {
+.card {
+    box-shadow: 0 4px 8px 0 var(--shadow-col);
+    transition: 0.3s;
+}
+
+.card:hover {
     box-shadow: 0 8px 16px 0 var(--shadow-col);
 }
 
@@ -193,6 +197,12 @@ code.code-block {
 
 h2 {
     color: var(--accent-1);
+}
+
+aside section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--bg-1);
 }
 
 aside section ul li {
