@@ -7,6 +7,7 @@
 
         <title>Nooh Alavi - Blog</title>
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/banner.css">
         <link rel="shortcut icon" href="images/favicon.ico">
         <script src="scripts/app.js"></script>
 
@@ -19,7 +20,7 @@
     </head>
     <body>
         <header>
-            <p class="warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
+            <p class="banner warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
 
             <button type="button" onclick="toggleTheme()" id="toggleThemeBtn"></button>
 
@@ -31,11 +32,10 @@
                 </ul>
             </nav>
         </header>
-        <h1 class="title">Nooh Alavi</h1>
-        <p class="subtitle">Just a teen who loves coding and game development!</p>
+        <h1 class="title">Blog Posts</h1>
+        <br><br><br><br>
         <article>
-            <section class="blog-posts">
-                <h2>Blog Posts</h2>
+            <section>
                 <ul>
                     <li><a href="posts/redesign-is-here.html">New Website Design Is Here!</a><i> - 16/5/21</i></li>
                     <li><a href="posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i></li>
@@ -44,18 +44,16 @@
             </section>
         </article>
         <aside>
-            <section>
+            <section class="card">
                 <h2>Latest Blogs</h2>
-                <ul>
-                    <li><a href="posts/redesign-is-here.html">New Website Design Is Here!</a><i> - 16/5/21</i></li>
-                    <li><a href="posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i></li>
-                    <li><a href="posts/hello-world.html">Hello, World!</a><i> - 1/5/21</i></li>
+                <ul id="sidebar-blog-posts">
+                    
                 </ul>
             </section>
-            <section>
+            <section class='card'>
                 <h2>New Project</h2>
             </section>
-            <section>
+            <section class='card'>
                 <h2>Latest Videos</h2>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=NEXasM8qrGw&t=5250s">TIC-80 Full Course - Space Invaders in JavaScript</a></li>
@@ -70,11 +68,11 @@
                 <li>Website Source Code: <a href="source.html">GitHub</a></li>
             </ul>
             <ul class="social-icons">
-                <li><a href="https://discord.gg/vxvKSvd" target=_blank><img src="images/discord.png" alt=""></a></li>
-                <li><a href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg" target=_blank><img src="images/yt.png" alt=""></a></li>
-                <li><a href="https://twitch.tv/opsci" target=_blank><img src="images/twitch.png" alt=""></a></li>
-                <li><a href="https://noohalavi.itch.io" target=_blank><img src="images/itch.png" alt=""></a></li>
-                <li><a href="https://github.com/NoohAlavi" target=_blank><img src="images/github.png" alt=""></a></li>
+                <li><a href="https://discord.gg/vxvKSvd" target=_blank><img src="images/social-icons/discord.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg" target=_blank><img src="images/social-icons/yt.png" alt=""></a></li>
+                <li><a href="https://twitch.tv/opsci" target=_blank><img src="images/social-icons/twitch.png" alt=""></a></li>
+                <li><a href="https://noohalavi.itch.io" target=_blank><img src="images/social-icons/itch.png" alt=""></a></li>
+                <li><a href="https://github.com/NoohAlavi" target=_blank><img src="images/social-icons/github.png" alt=""></a></li>
             </ul>
         </footer>
     </body>

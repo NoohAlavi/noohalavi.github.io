@@ -1,0 +1,46 @@
+@import url("./main.css");
+
+p.banner {
+    text-align: center;
+    padding: 8px;
+    border-radius: 2px;
+    color: var(--text-2);
+    font-size: 18px;
+}
+
+p.banner button {
+    color: var(--text-2);
+    font-weight: bolder;
+    border: none;
+    float: right;
+}
+
+p.banner button#close-warning:hover {
+    color: orange;
+}
+
+p.banner a {
+    color: var(--text-2);
+}
+
+p.banner a:hover {
+    font-weight: bold;
+}
+
+p.warning {
+    background-color: #880000;
+    border: 4px solid #880000;
+}
+
+p.warning button {
+    background-color: #880000;
+}
+
+p.stream {
+    background-color: green;
+    border: 4px solid green;
+}
+
+p.stream button {
+    background-color: green;
+}

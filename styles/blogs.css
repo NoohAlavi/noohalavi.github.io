@@ -17,7 +17,6 @@ i.date {
 }
 
 section.post, ul.posts {
-    border: 1px solid var(--accent-1);
     padding: 16px;
 }
 

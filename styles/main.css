@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Cuprum&family=Days+One&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Days+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
 
 :root {
     --bg-1: #e0e7f5;
@@ -10,6 +11,7 @@
     --accent-3: #932432;
     --text-1: #283747;
     --text-2: #f3f3f3;
+    --shadow-col: #00000044;
 }
 
 /* the following is the dark mode colour palette */
@@ -21,39 +23,19 @@
     --accent-3: #932432;
     --text-1: #e0e7f5;
     --text-2: #f3f3f3;
+    --shadow-col: #aaaaaa44;
 } */
 
 html {
-    background-color: var(--bg-1);
-    color: var(--text-1);
+    background-color: var(--bg-2);
     box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
+    transition: 0.3s;
 }
 
 *, *.before, *:after {
     box-sizing: inherit;
-}
-
-p.warning {
-    text-align: center;
-    padding: 8px;
-    background-color: #880000;
-    border: 4px solid #880000;
-    border-radius: 2px;
-    color: var(--text-2);
-    font-size: 18px;
-}
-
-p.warning button#close-warning {
-    background-color: #880000;
-    color: var(--text-2);
-    font-weight: bolder;
-    border: none;
-    float: right;
-}
-
-p.warning button#close-warning:hover {
-    color: orange;
+    font-family: "KoHo", sans-serif;
+    color: var(--text-1);
 }
 
 button#toggleThemeBtn {
@@ -110,15 +92,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-body {
-    background-color: var(--bg-2);
-    border: 1px solid var(--bg-2);
+article {
+    /* background-color: var(--bg-2);
+    border: 1px solid var(--bg-2); */
     border-radius: 4px;
     max-width: 1024px;
     min-width: 256px;
     margin-left: auto;
     margin-right: auto;
-    padding: 24px;
+    /* padding: 0px 24px; */
 }
 
 section {
@@ -126,9 +108,18 @@ section {
     min-height: 160px;
     padding-left: 24px;
     padding-right: 24px;
-    border: 1px solid var(--text-1);
-    background-color: var(--bg-1);
+    /* border: 1px solid var(--accent-1); */
+    /* background-color: var(--bg-1); */
 } 
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--shadow-col);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--shadow-col);
+}
 
 section a {
     color: var(--accent-1);
@@ -163,26 +154,38 @@ p.subtitle {
 }
 
 code {
-    border: 1px solid #300a24;
     background-color: #300a24;
+    border: 1px solid #300a24;
+    border-radius: 4px;
     color: var(--text-2);
+    font-family: "Ubuntu Mono", sans-serif;
+    font-size: 16px;
+}
+
+code.code-block {
+    border: 1px solid #300a24;
     border-radius: 6px;
+    padding: 8px;
     display: block;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 32px;
     margin-bottom: 32px;
-    padding: 8px;
-    font-family: "Ubuntu Mono", sans-serif;
-    font-size: 16px;
 }
 
 h2 {
     color: var(--accent-1);
 }
 
+aside section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--bg-1);
+}
+
 aside section ul li {
     list-style: none;    
+    margin-bottom: 10px;
 }
 
 aside section ul li::before {
@@ -191,13 +194,8 @@ aside section ul li::before {
 
 footer {
     background-color: var(--accent-2);
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px;
+    padding: 8px 4px;
+    margin: 0 auto;
     min-width: 256px;
 }
 
@@ -230,19 +228,19 @@ footer ul.social-icons li a img {
 }
 
 footer ul.social-icons li a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 @media all and (min-width: 900px) {
     article {
         float: left;
-        width: 70%;
+        width: 75%;
     }
 
     aside {
         float: left;
         padding-left: 24px;
-        width: 30%;
+        width: 25%;
     }
 
     footer {
@@ -250,8 +248,16 @@ footer ul.social-icons li a img:hover {
     }
 }
 
-@media all and (max-width: 899px) {
+@media all and (max-width: 599px) {
     aside {
         display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer ul.social-icons {
+        text-align: center;
     }
 }
