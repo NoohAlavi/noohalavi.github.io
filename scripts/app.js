@@ -1,6 +1,14 @@
 let warning;
 let themeToggle;
 let currentTheme = "light"
+let blogPostsList;
+
+const posts = [
+    ' <a href="/posts/redesign-is-here.html">New Website Design Is Here!</a><i> - 16/5/21</i>',
+    ' <a href="/posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i>',
+    ' <a href="/posts/hello-world.html">Hello, World!</a><i> - 1/5/21</i>'
+]
+
 
 function closeWarning() {
     warning.style.display = "none";
@@ -52,8 +60,21 @@ function setThemeBtn(theme) {
     themeToggle.innerText = `${btnText}`;
 }
 
+function addPosts() {
+    if (blogPostsList) {
+        for (let i = 0; i < posts.length; i++) {
+            post = document.createElement('li');
+            post.innerHTML = posts[i];
+            blogPostsList.appendChild(post);
+        }
+    } else {
+        console.error("Element with ID 'blog-posts' not loaded.")
+    }
+}
+
 window.onload = () => {
     warning = document.getElementsByClassName("warning")[0];
+    streamBanner = document.getElementsByClassName("stream")[0];
     themeToggle = document.getElementById("toggleThemeBtn");
 
     if (sessionStorage.getItem("closedWarning") == "true") {
@@ -73,4 +94,7 @@ window.onload = () => {
     } else {
         setTheme(storedTheme)
     }
+
+    blogPostsList = document.getElementById("sidebar-blog-posts");
+    addPosts();
 }
