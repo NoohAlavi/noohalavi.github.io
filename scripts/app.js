@@ -10,6 +10,7 @@ const posts = [
 ]
 
 
+
 function closeWarning() {
     warning.style.display = "none";
     sessionStorage.setItem("closedWarning", true);
@@ -71,6 +72,8 @@ function addPosts() {
         console.error("Element with ID 'blog-posts' not loaded.")
     }
 }
+
+
 
 window.onload = () => {
     warning = document.getElementsByClassName("warning")[0];
