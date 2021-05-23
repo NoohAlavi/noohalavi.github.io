@@ -6,6 +6,7 @@ md_path = "blog_generator/posts/"
 html_path = "posts/"
 boilerplate_path = "blog_generator/boilerplate.md"
 
+
 def read_md():
     """Reads all the markdown files in the blog_generator/posts/ folder
 
@@ -22,12 +23,13 @@ def read_md():
             md_data[md] = file_content
         return md_data
 
+
 def generate_html(md, file_name, title):
     """Formats given markdown and saves it in an html file using the boilerplate file as a template
 
     Args:
         md (str): Markdown
-        file_name (str): Name of file, extension will be converted to .html
+        file_name (str): Name of markdown file
     """
     if os.path.exists(boilerplate_path):
         with open(boilerplate_path, "r") as f:
@@ -70,10 +72,22 @@ def generate_html(md, file_name, title):
                     with open(new_file, "w") as f:
                         f.write(html)
 
+
+# Read all the markdown files and generate html files respectively
 md_files = read_md()
 for md in md_files:
+    # Converts the file extension from .md to .html 
     name = md.split(".")
     name = name[0] + ".html"
     name = ''.join(name)
-    content = md_files[md]
-    generate_html(content, name, "MY TITLE")
+    
+    # Gets the content and title from the md
+    content = md_files[md].split("\n")
+    title = content[0]
+
+    # Removes title from content, as it will be displayed in the header
+    content = content[1:]
+    content = '\n'.join(content)
+
+    # Generate the html file
+    generate_html(content, name, title)
