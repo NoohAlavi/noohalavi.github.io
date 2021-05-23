@@ -4,6 +4,7 @@ let currentTheme = "light"
 let blogPostsList;
 
 const posts = [
+    ' <a href="/posts/more-design-and-technical-changes.html">More Design And Technical Changes</a><i> - 23/5/21</i>',
     ' <a href="/posts/redesign-is-here.html">New Website Design Is Here!</a><i> - 16/5/21</i>',
     ' <a href="/posts/i_switched_to_linux.html">Why I Switched To Linux</a><i> - 8/5/21</i>',
     ' <a href="/posts/hello-world.html">Hello, World!</a><i> - 1/5/21</i>'

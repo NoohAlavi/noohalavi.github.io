@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Nooh Alavi - Hello World</title>
+        <title>Nooh Alavi - {PAGE-TITLE}</title>
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
         <link rel="stylesheet" type="text/css" href="../styles/banner.css">
@@ -14,8 +14,7 @@
 
         <meta property="og:site_name" content="Nooh Alavi">
         <meta property="og:url" content="https://noohalavi.github.io/posts/hello-world.html">
-        <meta property="og:title" content="Nooh Alavi Blog - Hello World">
-        <meta property="og:description" content="Hello World! Today's Saturday, the first of May, and I've just finished implementing blogs to the website, so I decided it would be an appropriate time to make my first post as well.">
+        <meta property="og:title" content="Nooh Alavi's Blog">
         <meta property="og:type" content="website">
         <meta name="og:image" itemprop="image" content="https://noohalavi.github.io/images/favicon.ico">
 
@@ -38,7 +37,7 @@
         <h2 class="date">{DATE}</h2>
     <article>
        <section class="post">       
-       {POST HERE}
+       {POST-HERE}
        </section>
     </article>
         <aside>

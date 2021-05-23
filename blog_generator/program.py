@@ -1,6 +1,8 @@
 import os
 from datetime import datetime as dt
 
+can_overwrite = True # Whether or not the program can overwrite existing files; useful for updating
+
 # Defining paths
 md_path = "blog_generator/posts/"
 html_path = "posts/"
@@ -45,7 +47,7 @@ def generate_html(md, file_name, title):
             md_formatted = ''.join(md_formatted)
             
             # Inserts the content into the page
-            content = boilerplate.split("{POST HERE}")
+            content = boilerplate.split("{POST-HERE}")
             content.insert(1, md_formatted)
             html = ''.join(content)
 
@@ -54,12 +56,18 @@ def generate_html(md, file_name, title):
             content.insert(1, title)
             html = ''.join(content)
 
+            # Change the tab's title
+
+            content = html.split("{PAGE-TITLE}")
+            content.insert(1, title)
+            html = ''.join(content)
+
             # Inserts the date into the page
             day = dt.now().day
             mon = dt.now().month
             year = dt.now().year
             date_formatted = f"{day}/{mon}/{year}"
-            
+
             content = html.split("{DATE}")
             content.insert(1, date_formatted)
             html = ''.join(content)
@@ -68,26 +76,28 @@ def generate_html(md, file_name, title):
             if os.path.exists(html_path):
                 new_file_name = file_name
                 new_file = os.path.join(html_path, new_file_name)
-                if not os.path.exists(new_file):
+                if not os.path.exists(new_file) or can_overwrite:
+                    print(f"Generating file {new_file}")
                     with open(new_file, "w") as f:
                         f.write(html)
 
 
 # Read all the markdown files and generate html files respectively
 md_files = read_md()
-for md in md_files:
-    # Converts the file extension from .md to .html 
-    name = md.split(".")
-    name = name[0] + ".html"
-    name = ''.join(name)
-    
-    # Gets the content and title from the md
-    content = md_files[md].split("\n")
-    title = content[0]
+if md_files:
+    for md in md_files:
+        # Converts the file extension from .md to .html 
+        name = md.split(".")
+        name = name[0] + ".html"
+        name = ''.join(name)
+        
+        # Gets the content and title from the md
+        content = md_files[md].split("\n")
+        title = content[0]
 
-    # Removes title from content, as it will be displayed in the header
-    content = content[1:]
-    content = '\n'.join(content)
+        # Removes title from content, as it will be displayed in the header
+        content = content[1:]
+        content = '\n'.join(content)
 
-    # Generate the html file
-    generate_html(content, name, title)
+        # Generate the html file
+        generate_html(content, name, title)
