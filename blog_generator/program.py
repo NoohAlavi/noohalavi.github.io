@@ -25,7 +25,6 @@ def read_md():
             md_data[md] = file_content
         return md_data
 
-
 def generate_html(md, file_name, title):
     """Formats given markdown and saves it in an html file using the boilerplate file as a template
 
@@ -36,6 +35,10 @@ def generate_html(md, file_name, title):
     if os.path.exists(boilerplate_path):
         with open(boilerplate_path, "r") as f:
             boilerplate = f.read()
+
+            # Removes title from content, as it will be displayed in the header
+            md = md[1:]
+            md = '\n'.join(md)
 
             # Format the linebreaks to <br> tags so they can be recognized by the HTML
             md_formatted = []
@@ -94,10 +97,6 @@ if md_files:
         # Gets the content and title from the md
         content = md_files[md].split("\n")
         title = content[0]
-
-        # Removes title from content, as it will be displayed in the header
-        content = content[1:]
-        content = '\n'.join(content)
 
         # Generate the html file
         generate_html(content, name, title)
