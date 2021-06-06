@@ -4,7 +4,7 @@ import styles from "../styles/components/Navbar.module.scss";
 export default function Navbar() {
     return (
         <nav className={styles.navbar}>
-            <h2 className={styles.header}>nooh alavi - developer</h2>
+            <h2 className={styles.pageheader}><Link href="/">nooh alavi - developer</Link></h2>
             <ul>
                <li><Link href="/">Home</Link></li>
                <li><Link href="/about-me">About Me</Link></li>

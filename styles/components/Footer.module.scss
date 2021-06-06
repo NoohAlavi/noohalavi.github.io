@@ -1,16 +1,25 @@
-footer.pagefooter {
-    background-color: cyan;
-    padding: 8px;
+@import "../palette.scss";
 
+footer.pagefooter {
+    background-color: $accent-2;
+    padding: 8px;
+    
     ul {
         list-style: none;
 
-        a {
+        @media (max-width: 500px) {
+            text-align: center;
+        }
+        
+        li {
             color: #111;
-            text-decoration: none;
+            a {
+                color: #111;
+                text-decoration: none;
 
-            &:hover {
-                text-decoration: underline;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

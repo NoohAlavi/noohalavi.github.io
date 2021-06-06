@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./palette.scss";
 
 * {
     font-family: 'Poppins', sans-serif;
+    color: $text-1;
+}
+
+.page-title {
+    text-align: center;
+    font-size: xx-large;
+    font-variant: small-caps;
+}
+
+.content {
+    padding: 32px;
+    text-align: justify;
+
+    a {
+        color: $link-col;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.header {
+    color: $accent-1;
 }

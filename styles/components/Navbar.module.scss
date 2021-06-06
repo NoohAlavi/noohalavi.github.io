@@ -1,22 +1,30 @@
+@import "../palette.scss";
+
 nav.navbar {
-    background-color: orange;
+    background-color: $accent-1;
     padding: 8px;
 
     ul {
         text-align: right;
+        
+        @media (max-width: 500px) {
+            align-items: center;
+            text-align: center;
+        }
 
         li {
             display: inline;
             padding-left: 8px;
             padding-right: 8px;
-            border-left: 2px solid #111;
+            border-left: 2px solid $text-2;
+            font-weight: bold;
 
             &:first-child {
                 border-left: none;
             }
 
             a {
-                color: #111;
+                color: $text-2;
                 text-decoration: none;
 
                 &:hover {
@@ -26,8 +34,20 @@ nav.navbar {
         }
     }
 
-    h2.header {
-        font-size: large;
-        margin: 16px;
+    h2.pageheader {
+        font-size: larger;
+        padding: 16px 32px;
+        a {
+            color: $text-2;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @media (max-width: 500px) {
+            text-align: center;
+        }
     }
 }
