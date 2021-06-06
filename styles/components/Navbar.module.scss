@@ -1,0 +1,33 @@
+nav.navbar {
+    background-color: orange;
+    padding: 8px;
+
+    ul {
+        text-align: right;
+
+        li {
+            display: inline;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-left: 2px solid #111;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            a {
+                color: #111;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    h2.header {
+        font-size: large;
+        margin: 16px;
+    }
+}
