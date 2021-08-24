@@ -5,7 +5,7 @@ export default function Dowloads() {
     return (
         <div>
             <Navbar/>
-            Downloads
+            <h1 className="page-title">My Projects</h1>
             <Footer/>
         </div>
     );

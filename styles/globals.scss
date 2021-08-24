@@ -7,7 +7,10 @@
 }
 
 html {
-    background-color: $bg-1;   
+    background: linear-gradient(-45deg, #111, #333, #222);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
 .page-title {
