@@ -6,14 +6,24 @@
     color: $text-1;
 }
 
+html {
+    background-color: $bg-1;   
+}
+
 .page-title {
     text-align: center;
-    font-size: xx-large;
+    font-size: 85px;
     font-variant: small-caps;
 }
 
+.page-subtitle {
+    text-align: center;
+    font-size: 45px;
+    font-variant: normal;
+}
+
 .content {
-    padding: 32px;
+    padding: 128px;
     text-align: justify;
 
     a {

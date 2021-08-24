@@ -16,19 +16,20 @@ nav.navbar {
             display: inline;
             padding-left: 8px;
             padding-right: 8px;
-            border-left: 2px solid $text-2;
+            border-left: 1px solid $text-1;
             font-weight: bold;
+            font-size: larger;
 
             &:first-child {
                 border-left: none;
             }
 
             a {
-                color: $text-2;
+                color: $text-1;
                 text-decoration: none;
 
                 &:hover {
-                    text-decoration: underline;
+                    color: #fff;
                 }
             }
         }
