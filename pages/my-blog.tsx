@@ -5,7 +5,9 @@ export default function Blog() {
     return (
         <div>
             <Navbar/>
-            <h1 className="page-title">My Blog</h1>
+            <div className="container">
+                <h1 className="page-title">My Blog</h1>
+            </div>
             <Footer/>
         </div>
     );
