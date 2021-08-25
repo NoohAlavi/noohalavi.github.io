@@ -1,24 +1,26 @@
 @import "../palette.scss";
 
 footer.pagefooter {
-    background-color: $accent-2;
     padding: 8px;
     
     ul {
         list-style: none;
+        text-align: center;
+        align-items: center;
 
-        @media (max-width: 500px) {
-            text-align: center;
-        }
         
         li {
             color: $text-1;
-            a {
-                color: $text-1;
-                text-decoration: none;
+            display: inline;
+            margin: 16px;
+
+            svg {
+                width: 30px;
+                transition: .5s;
 
                 &:hover {
-                    text-decoration: underline;
+                    width: 45px;
+                    color: $text-hover;
                 }
             }
         }

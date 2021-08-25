@@ -27,9 +27,11 @@ nav.navbar {
             a {
                 color: $text-1;
                 text-decoration: none;
+                transition: .5s;
 
                 &:hover {
-                    color: #fff;
+                    color: $text-hover;
+                    font-size: x-large;
                 }
             }
         }
