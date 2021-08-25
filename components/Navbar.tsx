@@ -1,7 +1,10 @@
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
+import useTitle from "../hooks/useTitle.js";
+
 
 export default function Navbar() {
+    useTitle("Nooh Alavi");
     return (
         <nav className={styles.navbar}>
             <ul>
@@ -11,5 +14,4 @@ export default function Navbar() {
             </ul>
         </nav>
     );
-
 }
