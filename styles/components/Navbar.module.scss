@@ -3,6 +3,10 @@
 nav.navbar {
     background-color: $accent-1;
     padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     ul {
         text-align: right;
@@ -24,6 +28,10 @@ nav.navbar {
                 border-left: none;
             }
 
+            &:last-child {
+                margin-right: 8px;
+            }
+
             a {
                 color: $text-1;
                 text-decoration: none;
@@ -36,21 +44,13 @@ nav.navbar {
             }
         }
     }
+}
 
-    h2.pageheader {
-        font-size: larger;
-        padding: 16px 32px;
-        a {
-            color: $text-2;
-            text-decoration: none;
+.logo {
+    width: 50px;
+    transition: .3s;
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        @media (max-width: 500px) {
-            text-align: center;
-        }
+    &:hover {
+        width: 64px;
     }
 }

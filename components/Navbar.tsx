@@ -8,10 +8,13 @@ export default function Navbar() {
     useFavicon("favicon.png", "image/png");
     return (
         <nav className={styles.navbar}>
+            <Link href="/">
+                <img src="favicon.png" className={styles.logo}></img>
+            </Link>
             <ul>
-               <li><Link href="/">Home</Link></li>
-               <li><Link href="/my-blog">My Blog</Link></li>
-               <li><Link href="/#myProjects">My Projects</Link></li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/my-blog">My Blog</Link></li>
+                <li><Link href="/#myProjects">My Projects</Link></li>
             </ul>
         </nav>
     );

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <h3 className="page-subtitle">Who Am I?</h3>
         <p className="content">
           My name's Nooh Alavi, I'm fifteen and I love programming! I taught myself how to code when I was ten, through books, YouTube videos, and of course, tons of Googling (thanks StackOverflow!).<br/><br/>
-          Now, as a hobby, I create video games, applications, and websites (like this one!).
+          Now, as a hobby, I create video games, applications, and websites (like this one!). Check out some of my projects down below, and feel free to <a href="https://github.com/NoohAlavi" target="_blank">contribute</a> to them!
         </p>
       </div>
       <div className="container">
