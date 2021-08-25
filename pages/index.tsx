@@ -18,18 +18,10 @@ export default function Home() {
       </div>
       <div className="container">
         <h3 className="page-subtitle" id="myProjects">My Projects</h3>     
-        <div className="card">
-          <div className="card-container">
-            <h4><b>Test 1</b></h4> 
-            <p>Desc</p> 
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-container">
-            <h4><b>Test 2</b></h4> 
-            <p>Desc</p> 
-          </div>
-        </div>   
+      </div>
+      <div className="container">
+        <h3 className="page-subtitle" id="mySocials">My Socials</h3>
+
       </div>
       <Footer/>
     </div>
