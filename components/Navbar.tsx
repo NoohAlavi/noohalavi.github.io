@@ -1,10 +1,8 @@
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
-import useTitle from "../hooks/useTitle.js";
 import useFavicon from "../hooks/useFavicon";
 
 export default function Navbar() {
-    useTitle("Nooh Alavi");
     useFavicon("favicon.png", "image/png");
     return (
         <nav className={styles.navbar}>

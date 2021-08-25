@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import useTitle from "../hooks/useTitle.js";
 
 export default function source() {
+    useTitle("Nooh Alavi - Source")
     return (
         <div>
             <Navbar/>

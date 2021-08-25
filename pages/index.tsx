@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import useTitle from "../hooks/useTitle.js";
 
 export default function Home() {
+  useTitle("Nooh Alavi - Home");
   return (
     <div>
       <Navbar/>
