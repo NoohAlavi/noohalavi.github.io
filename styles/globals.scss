@@ -7,10 +7,12 @@
 }
 
 html {
-    background: linear-gradient(-45deg, #111, #333, #222);
-	background-size: 500% 500%;
+    background: linear-gradient(-45deg, #111, #333, #444, #222);
+	background-size: 600% 600%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
+    background-attachment: fixed;
+
     scroll-behavior: smooth;
 }
 
