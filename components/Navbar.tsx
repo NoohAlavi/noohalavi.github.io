@@ -10,9 +10,9 @@ export default function Navbar() {
                 <img src="favicon.png" className={styles.logo}></img>
             </Link>
             <ul>
-                <li><Link href="/">Home</Link></li>
+                <li><Link href="/#aboutMe">About Me</Link></li>
                 <li><Link href="/#myProjects">Projects</Link></li>
-                <li><Link href="/#mySocials">Socials</Link></li>
+                <li><Link href="/#contact">Contact Me</Link></li>
                 <li><Link href="/my-blog">Blog</Link></li>
             </ul>
         </nav>

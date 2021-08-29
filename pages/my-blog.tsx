@@ -9,6 +9,9 @@ export default function Blog() {
             <Navbar/>
             <div className="container">
                 <h1 className="page-title">My Blog</h1>
+                <div className="content centered">
+                    Nothing to see here :(
+                </div>
             </div>
             <Footer/>
         </div>

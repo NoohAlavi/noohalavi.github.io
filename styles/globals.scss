@@ -25,17 +25,16 @@ html {
 .page-subtitle {
     text-align: center;
     font-size: 45px;
-    font-variant: normal;
 }
 
 .container {
     padding: 128px;
-    text-align: justify;
 }
 
 .content {
     font-size: 24px;
     transition: 0.15s;
+    text-align: justify;
 
     a {
         color: $accent-2;
@@ -78,4 +77,8 @@ html {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.centered {
+    text-align: center
 }
