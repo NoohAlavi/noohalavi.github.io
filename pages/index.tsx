@@ -20,6 +20,7 @@ export default function Home() {
       </div>
       <div className="container">
         <h3 className="page-subtitle" id="software">Software I Work With</h3>
+        {/* Things to add: Python, HTML, JS, CSS, REACTJS, GODOT */}
         <ul>
           
         </ul>
@@ -29,7 +30,12 @@ export default function Home() {
       </div>
       <div className="container">
         <h3 className="page-subtitle" id="contact">Contact Me</h3>
-        
+        <div>
+          <p className="content centered">
+            E-Mail: <a href="mailto:noohalavidev@gmail.com" target="_blank">noohalavidev@gmail.com</a><br/>
+            Discord Server: <a href="https://discord.gg/vxvKSvd">discord.gg/vxvKSvd</a>
+          </p>
+        </div>
       </div>
       <Footer/>
     </div>
