@@ -28,7 +28,7 @@ html {
 }
 
 .container {
-    padding: 128px;
+    padding: 28px;
 }
 
 .content {
@@ -81,4 +81,28 @@ html {
 
 .centered {
     text-align: center
+}
+
+@media (max-width:500px){
+    .content {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px){
+    .page-title {
+        font-size: 48px;
+    }
+    
+    .page-subtitle {
+        font-size: 36px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    .html {
+        background-size: 200% 300%;
+    }
 }
