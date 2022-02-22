@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Nooh Alavi - The New Design Is Here</title>
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+        <link rel="stylesheet" type="text/css" href="../styles/banner.css">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <script src="../scripts/app.js"></script>
+
+        <meta property="og:site_name" content="Nooh Alavi">
+        <meta property="og:url" content="https://noohalavi.github.io/posts/redesign-is-here.html">
+        <meta property="og:title" content="Nooh Alavi Blog - Dark Mode Is Here">
+        <meta property="og:description" content="Notice anything different? Over the past few days, I've been redesigning the entire site to give it a more 'modern' and 'professional' feel. I've also streamed most of the development process live on my Twitch channel, https://twitch.tv/opsci. For those of you who weren't there, there's a few changes which I made to the site -">
+        <meta property="og:type" content="website">
+        <meta name="og:image" itemprop="image" content="https://noohalavi.github.io/images/favicon.ico">
+
+    </head>
+    <body>
+        <header>
+            <p class="banner warning">This site is a heavy work in progress. <button id="close-warning" onclick="closeWarning()">X</button></p>
+        
+            <button type="button" onclick="toggleTheme()" id="toggleThemeBtn"></button>
+
+            <nav>
+                <h3 class="page-header"><a href="../index.html">nooh alavi - developer</a></h3>
+                <ul>
+                    <li><a href="../index.html" class="current">Home</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="title">The New Design Is Here!</h1>
+        <h2 class="date">16/5/2021</h2>
+    <article>
+        <section class="post">
+            <img class="blog-img" src="..\images\blog\dark-mode-is-here.png">
+            <p>
+                Notice anything different? Over the past few days, I've been redesigning the entire site to give it a more "modern" and "professional" feel. I've also streamed most of the development process live on my Twitch channel, <a href="https://twitch.tv/opsci">Opsci</a>.
+                For those of you who weren't there, there's a few changes which I made to the site -
+                <ul>
+                    <li><b>Dark Mode Is Here!</b> - This feature took me a while to get right, but it was worth it. A quick summary of this feature - when you load the website for the first time, it checks what your preferred system theme is. This was suprisingly easy to implement - It's as simple as adding the following check in the onload function - <code class="code-block">if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    </code> And then, based on  the result of that conditional, I simply change some root variables in the document's stylesheet using <code class="code-block">document.documentElement.style.setProperty("--var-name", "color")</code></li> It's also possible to change your theme using the sun/moon icon on the top right if you don't like the current one. Keep in mind that this palette is not final and some of these colours could change in the future.
+                    <li><b>Added Sidebar</b> - For those of you on desktop, you may noticed new sidebar on the page. This contains the latest blog posts, my newest videos, and more! For those on mobile or on smaller screen resolutions, this sidebar is unfortunately not available, as the screen is simply to small.</li>
+                    <li><b>Changed The Font</b> - I've gone through a few fonts on the site - first <a href="https://fonts.google.com/specimen/Quicksand?query=quick">Quicksand</a>, then <a href="https://fonts.google.com/specimen/Ubuntu?query=ubuntu">Ubuntu</a> (I'm actually still using the Ubuntu font for the code blocks), and now I'm using <a href="https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans">Josefin Sans</a> as my main font.</li>
+                    <li><b>Fixed Footer Bug</b> - As some of you may have noticed, the social media icons on the pages' footers where sometimes off. In some cases, they weren't in the footer at all, but rather beside it! Obviously that wasn't supposed to happen, but fortunately I managed to fix it. I simply replaced the div with an ul, and set its text-align property to true, which fixed the problem.</li>
+                </ul>
+                More changes are probably coming, so stay tuned on my twitch channel and the <a href="https://github.com/NoohAlavi/noohalavi.github.io/tree/dev">GitHub repository's dev branch</a>. If you have any feedback, let me know on stream, on the GitHub, or on my <a href="https://discord.gg/vxvKSvd">Discord Server</a>. Cya next time!
+            </p>
+        </section>
+    </article>
+        <aside>
+            <section class="card">
+                <h2>Latest Blogs</h2>
+                <ul id="sidebar-blog-posts">
+                    
+                </ul>
+            </section>
+            <section class='card'>
+                <h2>New Project</h2>
+            </section>
+            <section class='card'>
+                <h2>Latest Videos</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=NEXasM8qrGw&t=5250s">TIC-80 Full Course - Space Invaders in JavaScript</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=N0Eo-zph36Y">Failing at making a game in1 week for MY OWN GAMEJAM (ft. SkyanSam, Prod.Nishy, Waller3000, Autumn)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=tbfyFhoR4W0">The Theme For The Spooktober Gamejam is...</a></li>
+                </ul>
+            </section>
+        </aside>
+        <footer>
+            <ul>
+                <li>Contact: <a href="mailto:noohalavidev@gmail.com">noohalavidev@gmail.com</a></li>
+                <li>Website Source Code: <a href="source.html">GitHub</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="https://discord.gg/vxvKSvd" target=_blank><img src="../images/social-icons/discord.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UC2W0dJwYSOHm4Rn1p17P6qg" target=_blank><img src="../images/social-icons/yt.png" alt=""></a></li>
+                <li><a href="https://twitch.tv/opsci" target=_blank><img src="../images/social-icons/twitch.png" alt=""></a></li>
+                <li><a href="https://noohalavi.itch.io" target=_blank><img src="../images/social-icons/itch.png" alt=""></a></li>
+                <li><a href="https://github.com/NoohAlavi" target=_blank><img src="../images/social-icons/github.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
