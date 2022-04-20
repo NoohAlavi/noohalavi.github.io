@@ -21,6 +21,8 @@ export default function Footer () {
                     </Link>
                 </li>
             </ul>
+            <p style={{textAlign:'center'}}>This site is incomplete and is still work in progress. Keep an eye on the <Link href="https://github.com/NoohAlavi/noohalavi.github.io/tree/dev">github page</Link> for any updates!</p>
+            <br/>
         </footer>
     );
 }
